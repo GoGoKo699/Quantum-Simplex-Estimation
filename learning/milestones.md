@@ -4,7 +4,7 @@ This is the common understanding map for Quantum Simplex Estimation. Its single 
 
 The map has **12 background/preliminaries milestones, M01–M12, and 18 narrative/innovation milestones, M13–M30**. The first phase joins a labelled quantum experiment, a valid probability estimate and the operations that can be paid for. The second builds the conditional reflection and random-mass tree, proves their global statistical and resource guarantees, then explains composition and implementation limits. This allocation follows the two ingredients that must meet: a quantum operation must remain coherent inside a split, and its random classical output must remain a valid probability vector outside it.
 
-Each milestone has a conceptual target and earlier dependencies. The map covers the connected scientific account without assigning every technical detail or implying that all of it appears in the anchor. The [scientific reading route](../science/README.md) provides direct access to the authoritative proofs.
+Each milestone has a conceptual target and earlier dependencies. The map covers the connected scientific account without assigning every technical detail or implying that all of it appears in the anchor. Begin with the [source-to-project bridge](anchor-bridge.md) for notation and a complete small example. The [scientific reading route](../science/README.md) provides direct access to the authoritative proofs.
 
 ## Phase I: background and preliminaries
 
@@ -126,7 +126,7 @@ Each milestone has a conceptual target and earlier dependencies. The map covers 
 - **Understanding target:** Assemble the source/inverse, known subset predicates, initial conditional specimens, controlled reflections, scalar readout and conditional-mean rules into one operational problem. State why scalar precision alone does not settle it.
 - **Dependencies and story role:** M01–M11. This integrates the background phase and fixes the question answered by the construction.
 - **Conceptual connection:** Quantum access and classical output geometry impose simultaneous requirements; neither one may be removed from the resource comparison.
-- **Source pointers:** Childs §§1.4, 19.3, 21.1–21.2, 28.3 and 29.1; [model §§2–5](../science/model.md#2-allowed-work-and-charged-resources) and [the retained contribution](../references/related-work.md#operational-scope).
+- **Source pointers:** Childs §§1.4, 19.3, 21.1–21.2, 28.3 and 29.1; [model §§2–5](../science/model.md#2-allowed-work-and-charged-resources) and [the retained contribution](../references/related-work.md#5-operational-scope).
 
 ## Phase II: narrative and innovation
 
