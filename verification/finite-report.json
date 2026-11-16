@@ -1,0 +1,4211 @@
+{
+  "status": "passed",
+  "scope": "Deterministic finite-dimensional floating-point checks; not a proof certificate, runtime-tail simulation, finite-synthesis theorem, hardware run or external review.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "direct_scalar_experiment": {
+    "target_dimension": 6,
+    "label_count": 3,
+    "junk_dimension": 2,
+    "good_probability": 0.7667870694549366,
+    "cases": [
+      {
+        "m": 3,
+        "clock_probability_error": 5.551115123125783e-16,
+        "mean_error": 4.440892098500626e-16,
+        "variance_formula_error": 1.3877787807814457e-16,
+        "smallest_positive_readout": 0.49999999999999994,
+        "minimum_readout_bound": 0.1875
+      },
+      {
+        "m": 7,
+        "clock_probability_error": 5.551115123125783e-16,
+        "mean_error": 1.2212453270876722e-15,
+        "variance_formula_error": 5.551115123125783e-17,
+        "smallest_positive_readout": 0.11731656763491022,
+        "minimum_readout_bound": 0.046875
+      },
+      {
+        "m": 15,
+        "clock_probability_error": 1.1657341758564144e-15,
+        "mean_error": 2.7755575615628914e-15,
+        "variance_formula_error": 2.6020852139652106e-17,
+        "smallest_positive_readout": 0.029010298700928694,
+        "minimum_readout_bound": 0.01171875
+      },
+      {
+        "m": 31,
+        "clock_probability_error": 2.609024107869118e-15,
+        "mean_error": 4.551914400963142e-15,
+        "variance_formula_error": 1.0408340855860843e-17,
+        "smallest_positive_readout": 0.0072345595159588605,
+        "minimum_readout_bound": 0.0029296875
+      }
+    ]
+  },
+  "tree_laws": {
+    "cases": [
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 0.62,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.894427190999916,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 0.62,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.894427190999916,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.3100000000000003,
+        "T_squared_mse": 2.7900000000000027,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6911042097332999,
+        "reflection_proxy_over_T": 1.8000000000000007,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 5.58,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6314757303333053,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.1628911198818253,
+        "T_squared_mse": 7.98166487420944,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.30256723028372073,
+        "reflection_proxy_over_T": 1.630411789234618,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 6.661338147750939e-16,
+        "mse": 0.29125000000000023,
+        "T_squared_mse": 14.27125000000001,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.29618751845712854,
+        "reflection_proxy_over_T": 0.9428571428571432,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.047415238395073334,
+        "T_squared_mse": 10.6684286388915,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.141202116635459,
+        "reflection_proxy_over_T": 1.583427474225362,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.07141259796737837,
+        "T_squared_mse": 16.067834542660133,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.14119804079906967,
+        "reflection_proxy_over_T": 1.0486420874923434,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.012638739970008972,
+        "T_squared_mse": 12.145829111178623,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06832367629485399,
+        "reflection_proxy_over_T": 1.6047956807256993,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 31
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.018965855781877927,
+        "T_squared_mse": 18.22618740638469,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.0683236048236092,
+        "reflection_proxy_over_T": 1.0883218150485392,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 0.62,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.894427190999916,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 0.62,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.894427190999916,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.3100000000000003,
+        "T_squared_mse": 2.7900000000000027,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6911042097332999,
+        "reflection_proxy_over_T": 1.8000000000000007,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.62,
+        "T_squared_mse": 5.58,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6314757303333053,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.1628911198818253,
+        "T_squared_mse": 7.98166487420944,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.30256723028372073,
+        "reflection_proxy_over_T": 1.630411789234618,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 6.661338147750939e-16,
+        "mse": 0.29125000000000023,
+        "T_squared_mse": 14.27125000000001,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.29618751845712854,
+        "reflection_proxy_over_T": 0.9428571428571432,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.047415238395073334,
+        "T_squared_mse": 10.6684286388915,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.141202116635459,
+        "reflection_proxy_over_T": 1.583427474225362,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.07141259796737837,
+        "T_squared_mse": 16.067834542660133,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.14119804079906967,
+        "reflection_proxy_over_T": 1.0486420874923434,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.012638739970008972,
+        "T_squared_mse": 12.145829111178623,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06832367629485399,
+        "reflection_proxy_over_T": 1.6047956807256993,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 31
+      },
+      {
+        "p": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.018965855781877927,
+        "T_squared_mse": 18.22618740638469,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.0683236048236092,
+        "reflection_proxy_over_T": 1.0883218150485392,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.999867269679271e-12,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.9999999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.999867269679271e-12,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.9999999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 3.000044657142098e-12,
+        "T_squared_mse": 2.7000401914278882e-11,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6666666666668335,
+        "reflection_proxy_over_T": 1.9999999999990006,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.399880542711344e-11,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666665,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-16,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 7.721601136267964e-13,
+        "T_squared_mse": 3.783584556771302e-11,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.28571428571435714,
+        "reflection_proxy_over_T": 1.9999999999962317,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 3.000044657142098e-12,
+        "T_squared_mse": 1.470021881999628e-10,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.2857142857143572,
+        "reflection_proxy_over_T": 0.8571428571432859,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 2.0805579481475434e-13,
+        "T_squared_mse": 4.6812553833319726e-11,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.13333333333336667,
+        "reflection_proxy_over_T": 1.9999999999831592,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-16,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 7.721601136267964e-13,
+        "T_squared_mse": 1.7373602556602918e-10,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.13333333333336667,
+        "reflection_proxy_over_T": 0.9333333333337989,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 5.551115123125783e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 5.473399511402022e-14,
+        "T_squared_mse": 5.259936930457343e-11,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06451612903227417,
+        "reflection_proxy_over_T": 1.9999999999319285,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 31
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 2.0805579481475434e-13,
+        "T_squared_mse": 1.9994161881697892e-10,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.06451612903227419,
+        "reflection_proxy_over_T": 0.9677419354843548,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.999867269679271e-12,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.9999999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.999867269679271e-12,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 1.9999999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 3.000044657142098e-12,
+        "T_squared_mse": 2.7000401914278882e-11,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6666666666668335,
+        "reflection_proxy_over_T": 1.9999999999990006,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 5.999867269679271e-12,
+        "T_squared_mse": 5.399880542711344e-11,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666665,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-16,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 7.721601136267964e-13,
+        "T_squared_mse": 3.783584556771302e-11,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.28571428571435714,
+        "reflection_proxy_over_T": 1.9999999999962317,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 3.000044657142098e-12,
+        "T_squared_mse": 1.470021881999628e-10,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.2857142857143572,
+        "reflection_proxy_over_T": 0.8571428571432859,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 2.0805579481475434e-13,
+        "T_squared_mse": 4.6812553833319726e-11,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.13333333333336667,
+        "reflection_proxy_over_T": 1.9999999999831592,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-16,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 7.721601136267964e-13,
+        "T_squared_mse": 1.7373602556602918e-10,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.13333333333336667,
+        "reflection_proxy_over_T": 0.9333333333337989,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 5.551115123125783e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 5.473399511402022e-14,
+        "T_squared_mse": 5.259936930457343e-11,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06451612903227417,
+        "reflection_proxy_over_T": 1.9999999999319285,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 31
+      },
+      {
+        "p": [
+          1e-12,
+          2e-12,
+          0.999999999997
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 2.0805579481475434e-13,
+        "T_squared_mse": 1.9994161881697892e-10,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.06451612903227419,
+        "reflection_proxy_over_T": 0.9677419354843548,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 0.42000000000000004,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 0.42000000000000004,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.20999999999999996,
+        "T_squared_mse": 1.8899999999999997,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 3.7800000000000007,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.05404545570495023,
+        "T_squared_mse": 2.648227329542561,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.20999999999999996,
+        "T_squared_mse": 10.29,
+        "T_squared_min_positive": 24.499999999999996,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 0.8571428571428571,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014540552736993395,
+        "T_squared_mse": 3.271624365823514,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.05404545570495023,
+        "T_squared_mse": 12.160227533613801,
+        "T_squared_min_positive": 26.3962277178548,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 0.9333333333333333,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.0038195941357604957,
+        "T_squared_mse": 3.6706299644658364,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014540552736993395,
+        "T_squared_mse": 13.973471180250653,
+        "T_squared_min_positive": 27.87889705159242,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 0.967741935483871,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 0.42000000000000004,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 0.42000000000000004,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.20999999999999996,
+        "T_squared_mse": 1.8899999999999997,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.42000000000000004,
+        "T_squared_mse": 3.7800000000000007,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.05404545570495023,
+        "T_squared_mse": 2.648227329542561,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.20999999999999996,
+        "T_squared_mse": 10.29,
+        "T_squared_min_positive": 24.499999999999996,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 0.8571428571428571,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014540552736993395,
+        "T_squared_mse": 3.271624365823514,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.05404545570495023,
+        "T_squared_mse": 12.160227533613801,
+        "T_squared_min_positive": 26.3962277178548,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 0.9333333333333333,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.0038195941357604957,
+        "T_squared_mse": 3.6706299644658364,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.3,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014540552736993395,
+        "T_squared_mse": 13.973471180250653,
+        "T_squared_min_positive": 27.87889705159242,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 0.967741935483871,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 49.0,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 49.0,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 0.8571428571428571,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 225.0,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 225.0,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 0.9333333333333333,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 961.0,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 961.0,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 0.967741935483871,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666666666666666,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 49.0,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 49.0,
+        "prep_proxy_over_T": 0.2857142857142857,
+        "reflection_proxy_over_T": 0.8571428571428571,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 225.0,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 225.0,
+        "prep_proxy_over_T": 0.13333333333333333,
+        "reflection_proxy_over_T": 0.9333333333333333,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 961.0,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.0,
+        "T_squared_mse": 0.0,
+        "T_squared_min_positive": 961.0,
+        "prep_proxy_over_T": 0.06451612903225806,
+        "reflection_proxy_over_T": 0.967741935483871,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 0.75,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.414213562373095,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 0.75,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.414213562373095,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.3750000000000003,
+        "T_squared_mse": 3.3750000000000027,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.0404401145198814,
+        "reflection_proxy_over_T": 2.0000000000000004,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 6.75,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.8047378541243649,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.1842301221950488,
+        "T_squared_mse": 9.027275987557392,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.5469181606780272,
+        "reflection_proxy_over_T": 2.222951453111403,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 13
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.3125000000000003,
+        "T_squared_mse": 15.312500000000012,
+        "T_squared_min_positive": 12.249999999999996,
+        "prep_proxy_over_T": 0.4459029062228063,
+        "reflection_proxy_over_T": 1.714285714285715,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.058347336387427506,
+        "T_squared_mse": 13.128150687171189,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.25522847498307943,
+        "reflection_proxy_over_T": 2.5510649953583306,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 29
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.0768820560082949,
+        "T_squared_mse": 17.298462601866355,
+        "T_squared_min_positive": 13.198113858927398,
+        "prep_proxy_over_T": 0.2552284749830794,
+        "reflection_proxy_over_T": 1.9983249156101943,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 13
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 1.6653345369377348e-16,
+        "mse": 0.016485617318502566,
+        "T_squared_mse": 15.842678243080965,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.12349764918536096,
+        "reflection_proxy_over_T": 2.628986485538069,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 61
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.02177301055602482,
+        "T_squared_mse": 20.92386314433985,
+        "T_squared_min_positive": 13.939448525796209,
+        "prep_proxy_over_T": 0.123497649185361,
+        "reflection_proxy_over_T": 2.1142765682382207,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 29
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 0.75,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.5731321849709863,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 0.75,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.5731321849709863,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.3750000000000002,
+        "T_squared_mse": 3.3750000000000018,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.0477306421701238,
+        "reflection_proxy_over_T": 2.2500000000000013,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 6
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.75,
+        "T_squared_mse": 6.75,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.8577107283236621,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.20828735020628797,
+        "T_squared_mse": 10.206080160108112,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.48832175960618496,
+        "reflection_proxy_over_T": 2.1574973281761447,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 21
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.3322676295501878e-15,
+        "maximum_mean_error": 4.996003610813204e-16,
+        "mse": 0.3281250000000002,
+        "T_squared_mse": 16.078125000000014,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.4658632938154471,
+        "reflection_proxy_over_T": 1.5357142857142867,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.05992095978825002,
+        "T_squared_mse": 13.482215952356254,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.23784805257276614,
+        "reflection_proxy_over_T": 2.3466507921829938,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 80
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.08569675817641276,
+        "T_squared_mse": 19.28177058969287,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.23768968961953366,
+        "reflection_proxy_over_T": 1.7794152309079259,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 34
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.017215543996060234,
+        "T_squared_mse": 16.544137780213887,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.11512606900524872,
+        "reflection_proxy_over_T": 2.3830187286624596,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 314
+      },
+      {
+        "p": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.024525368605687214,
+        "T_squared_mse": 23.568879230065413,
+        "T_squared_min_positive": 13.535060960336644,
+        "prep_proxy_over_T": 0.11512415476664761,
+        "reflection_proxy_over_T": 1.819584585953158,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 145
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 0.48000000119999997,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0000316222766017,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 0.48000000119999997,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.0000316222766017,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.24000000059999993,
+        "T_squared_mse": 2.1600000053999993,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 0.6666877486843905,
+        "reflection_proxy_over_T": 2.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 4.320000010799999,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.6666772074255339,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.0617662363454754,
+        "T_squared_mse": 3.0265455809282944,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.2857519762761892,
+        "reflection_proxy_over_T": 2.022645487527974,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 13
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.24000000047999992,
+        "T_squared_mse": 11.760000023519996,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.2857233208647388,
+        "reflection_proxy_over_T": 1.7142857142857142,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.016617776003635787,
+        "T_squared_mse": 3.738999600818052,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.13340385577353892,
+        "reflection_proxy_over_T": 2.0047278588330957,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 29
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.06176623519198399,
+        "T_squared_mse": 13.897402918196397,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.13335092226222164,
+        "reflection_proxy_over_T": 0.9579917622995097,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 13
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.004365252062773162,
+        "T_squared_mse": 4.1950072323250085,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.06465264381412904,
+        "reflection_proxy_over_T": 2.0017506870129207,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 61
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.01661777458206848,
+        "T_squared_mse": 15.969681373367807,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.06455025279364786,
+        "reflection_proxy_over_T": 0.9934537860321511,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 29
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 0.48000000119999997,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.9999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 0.48000000119999997,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.9999999995,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.24000000059999993,
+        "T_squared_mse": 2.1600000053999993,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.0000000001666667,
+        "reflection_proxy_over_T": 2.999999999,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 1.1102230246251565e-16,
+        "mse": 0.48000000119999997,
+        "T_squared_mse": 4.320000010799999,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.9999999998333333,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.0617662363454754,
+        "T_squared_mse": 3.0265455809282944,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.4285714286428572,
+        "reflection_proxy_over_T": 2.99999999623138,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 8
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.24000000047999992,
+        "T_squared_mse": 11.760000023519996,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.42857142864285713,
+        "reflection_proxy_over_T": 1.2857142861428572,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.016617776003635787,
+        "T_squared_mse": 3.738999600818052,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.2000000000333334,
+        "reflection_proxy_over_T": 2.999999983158849,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 16
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.06176623519198399,
+        "T_squared_mse": 13.897402918196397,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.20000000003333337,
+        "reflection_proxy_over_T": 1.4000000004654596,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 8
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.004365252062773162,
+        "T_squared_mse": 4.1950072323250085,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.0967741935645161,
+        "reflection_proxy_over_T": 2.9999999319283437,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 32
+      },
+      {
+        "p": [
+          0.0,
+          1e-09,
+          0.4,
+          0.599999999
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.01661777458206848,
+        "T_squared_mse": 15.969681373367807,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.09677419356451616,
+        "reflection_proxy_over_T": 1.4516129037094567,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 16
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 0.5446,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.1067741589870117,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 0.5446,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.1067741589870117,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 1.3322676295501878e-15,
+        "maximum_mean_error": 6.661338147750939e-16,
+        "mse": 0.2723000000000003,
+        "T_squared_mse": 2.450700000000003,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.133065996843878,
+        "reflection_proxy_over_T": 2.900000000000001,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 8
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 4.9014,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.0355913863290038,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.885780586188048e-16,
+        "mse": 0.14125259059275475,
+        "T_squared_mse": 6.921376939044983,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.6247330651729512,
+        "reflection_proxy_over_T": 2.6377783757464384,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 27
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.3322676295501878e-15,
+        "maximum_mean_error": 7.771561172376096e-16,
+        "mse": 0.25830893470790406,
+        "T_squared_mse": 12.6571378006873,
+        "T_squared_min_positive": 12.249999999999996,
+        "prep_proxy_over_T": 0.4861865273442558,
+        "reflection_proxy_over_T": 2.183858615611194,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 9
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.0570877218261312,
+        "T_squared_mse": 12.84473741087952,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.4576723874702065,
+        "reflection_proxy_over_T": 2.207216010604066,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 94
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.06519056375832016,
+        "T_squared_mse": 14.667876845622038,
+        "T_squared_min_positive": 13.198113858927398,
+        "prep_proxy_over_T": 0.2916259481919623,
+        "reflection_proxy_over_T": 1.5950635695298845,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 40
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.0166681670445869,
+        "T_squared_mse": 16.01810852984801,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.2846983140996447,
+        "reflection_proxy_over_T": 2.044789139719548,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 344
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 7.771561172376096e-16,
+        "mse": 0.01768341517567229,
+        "T_squared_mse": 16.99376198382107,
+        "T_squared_min_positive": 13.535060960336644,
+        "prep_proxy_over_T": 0.2214550296362336,
+        "reflection_proxy_over_T": 1.5845424996177968,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 159
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 0.5446,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.9285565153367448,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 0.5446,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.9285565153367448,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 7.771561172376096e-16,
+        "mse": 0.2723000000000003,
+        "T_squared_mse": 2.450700000000003,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.3543070976394176,
+        "reflection_proxy_over_T": 3.8600000000000017,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 10
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.5446,
+        "T_squared_mse": 4.9014,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.3095188384455816,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.14158585229902299,
+        "T_squared_mse": 6.937706762652127,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.5818709508052761,
+        "reflection_proxy_over_T": 3.5956026645110843,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 47
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 8.881784197001252e-16,
+        "mse": 0.2614695928355726,
+        "T_squared_mse": 12.812010048943057,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.5811117960775204,
+        "reflection_proxy_over_T": 1.7720962199312726,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 14
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.885780586188048e-16,
+        "mse": 0.05739127334423488,
+        "T_squared_mse": 12.913036502452849,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.27163002557900234,
+        "reflection_proxy_over_T": 3.057930455159166,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 309
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.0652505081352932,
+        "T_squared_mse": 14.681364330440971,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.2716278218303528,
+        "reflection_proxy_over_T": 1.9368860001654098,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 125
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 6.661338147750939e-16,
+        "mse": 0.016830142236763268,
+        "T_squared_mse": 16.1737666895295,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.13143470348661165,
+        "reflection_proxy_over_T": 2.6524469264814745,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2385
+      },
+      {
+        "p": [
+          0.01,
+          0.02,
+          0.07,
+          0.3,
+          0.6
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 6.661338147750939e-16,
+        "mse": 0.01740692029479668,
+        "T_squared_mse": 16.728050403299612,
+        "T_squared_min_positive": 13.535060960336644,
+        "prep_proxy_over_T": 0.131434692169247,
+        "reflection_proxy_over_T": 2.0090053883696317,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 1080
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 0.4600000000000001,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.948683298050514,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 0.4600000000000001,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 2.948683298050514,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.2300000000000002,
+        "T_squared_mse": 2.070000000000002,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.0145172092851886,
+        "reflection_proxy_over_T": 2.9000000000000004,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 4.140000000000001,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 0.9828944326835046,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 3
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.10930711903494916,
+        "T_squared_mse": 5.356048832712509,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.4362960825049832,
+        "reflection_proxy_over_T": 2.7323186376054975,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 8
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.22222222222222232,
+        "T_squared_mse": 10.888888888888893,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.4347930896936522,
+        "reflection_proxy_over_T": 1.3285714285714287,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.04097311598441089,
+        "T_squared_mse": 9.21895109649245,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.2036061213456727,
+        "reflection_proxy_over_T": 2.5249044536943326,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 16
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.0557117521625381,
+        "T_squared_mse": 12.535144236571071,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.2036048385023255,
+        "reflection_proxy_over_T": 1.451530226928586,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 8
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.01105718464980543,
+        "T_squared_mse": 10.625954448463018,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.09851911437399569,
+        "reflection_proxy_over_T": 2.537657879015411,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 32
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "balanced",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014886935968761894,
+        "T_squared_mse": 14.306345465980181,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.0985190909737126,
+        "reflection_proxy_over_T": 1.5052937964727855,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 16
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "ideal",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 0.4600000000000001,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.948683298050514,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 1,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 0.4600000000000001,
+        "T_squared_min_positive": 1.0,
+        "prep_proxy_over_T": 3.948683298050514,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.2300000000000002,
+        "T_squared_mse": 2.070000000000002,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.3478505426185219,
+        "reflection_proxy_over_T": 3.9000000000000004,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.4600000000000001,
+        "T_squared_mse": 4.140000000000001,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.316227766016838,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 4
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.10930711903494916,
+        "T_squared_mse": 5.356048832712509,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.579153225362126,
+        "reflection_proxy_over_T": 3.7323186376054975,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 9
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.22222222222222232,
+        "T_squared_mse": 10.888888888888893,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 0.5776502325507951,
+        "reflection_proxy_over_T": 1.7571428571428573,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 5
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.04097311598441089,
+        "T_squared_mse": 9.21895109649245,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.2702727880123394,
+        "reflection_proxy_over_T": 3.5249044536943326,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 17
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.0557117521625381,
+        "T_squared_mse": 12.535144236571071,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.2702715051689921,
+        "reflection_proxy_over_T": 1.9181968935952525,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 9
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.01105718464980543,
+        "T_squared_mse": 10.625954448463018,
+        "T_squared_min_positive": 6.952411694836465,
+        "prep_proxy_over_T": 0.13077717889012472,
+        "reflection_proxy_over_T": 3.537657879015411,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 33
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          0.1,
+          0.2,
+          0.7
+        ],
+        "tree": "comb",
+        "T": 31,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.014886935968761894,
+        "T_squared_mse": 14.306345465980181,
+        "T_squared_min_positive": 13.93944852579621,
+        "prep_proxy_over_T": 0.13077715548984165,
+        "reflection_proxy_over_T": 1.989164764214721,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 17
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 1.6653345369377348e-16,
+        "mse": 0.4375000000000004,
+        "T_squared_mse": 3.9375000000000036,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 2.207106781186549,
+        "reflection_proxy_over_T": 3.0000000000000018,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 17
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 0.0,
+        "mse": 0.875,
+        "T_squared_mse": 7.875,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.4714045207910316,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.24060961440422132,
+        "T_squared_mse": 11.789871105806844,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 1.3221719742918328,
+        "reflection_proxy_over_T": 3.571428571428573,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 69
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.7763568394002505e-15,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.31250000000000056,
+        "T_squared_mse": 15.312500000000028,
+        "T_squared_min_positive": 12.249999999999996,
+        "prep_proxy_over_T": 1.0887600490799498,
+        "reflection_proxy_over_T": 3.85714285714286,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 21
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 1.7763568394002505e-15,
+        "maximum_mean_error": 3.0531133177191805e-16,
+        "mse": 0.10658738001490947,
+        "T_squared_mse": 23.98216050335463,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.7490607858868678,
+        "reflection_proxy_over_T": 4.925425864806181,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 289
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.5543122344752192e-15,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.10800962534679884,
+        "T_squared_mse": 24.30216570302974,
+        "T_squared_min_positive": 13.198113858927396,
+        "prep_proxy_over_T": 0.7454653676892977,
+        "reflection_proxy_over_T": 4.406658248943529,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 121
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 1.7763568394002505e-15,
+        "maximum_mean_error": 3.0531133177191805e-16,
+        "mse": 0.43750000000000083,
+        "T_squared_mse": 3.937500000000007,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 2.384223740076365,
+        "reflection_proxy_over_T": 4.375000000000005,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 28
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 2.7755575615628914e-17,
+        "mse": 0.875,
+        "T_squared_mse": 7.875,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.8038294608007872,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 1.7763568394002505e-15,
+        "maximum_mean_error": 3.3306690738754696e-16,
+        "mse": 0.2709319228617063,
+        "T_squared_mse": 13.27566422022361,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 1.1737816769721907,
+        "reflection_proxy_over_T": 4.375693897032781,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 252
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.6645352591003757e-15,
+        "maximum_mean_error": 4.440892098500626e-16,
+        "mse": 0.35546875000000083,
+        "T_squared_mse": 17.41796875000004,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 1.1511967494623616,
+        "reflection_proxy_over_T": 3.472193877551025,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 63
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 1.7763568394002505e-15,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.09545866949439966,
+        "T_squared_mse": 21.478200636239922,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.6128032157166392,
+        "reflection_proxy_over_T": 4.728697803641767,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7293
+      },
+      {
+        "p": [
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 2.220446049250313e-16,
+        "mse": 0.10862506867239638,
+        "T_squared_mse": 24.440640451289184,
+        "T_squared_min_positive": 12.484516194664165,
+        "prep_proxy_over_T": 0.6110141233739164,
+        "reflection_proxy_over_T": 4.137255668084916,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 2539
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 4.440892098500626e-16,
+        "maximum_mean_error": 1.6653345369377348e-16,
+        "mse": 0.3500000000400001,
+        "T_squared_mse": 3.150000000360001,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 1.3396087941030181,
+        "reflection_proxy_over_T": 3.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 13
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.7000000000800001,
+        "T_squared_mse": 6.300000000720001,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 1.12813419464316,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 6
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 1.942890293094024e-16,
+        "mse": 0.18509920868736668,
+        "T_squared_mse": 9.069861225680967,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 0.7086254300045167,
+        "reflection_proxy_over_T": 3.0510282085045857,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 47
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.3009523809809696,
+        "T_squared_mse": 14.746666668067512,
+        "T_squared_min_positive": 12.249999999999996,
+        "prep_proxy_over_T": 0.574118054633705,
+        "reflection_proxy_over_T": 3.8571428570571444,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 15
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.885780586188048e-16,
+        "mse": 0.059475589807982676,
+        "T_squared_mse": 13.382007706796102,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.3347754300609475,
+        "reflection_proxy_over_T": 3.3357674496640146,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 173
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "balanced",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 2.220446049250313e-16,
+        "maximum_mean_error": 1.3877787807814457e-16,
+        "mse": 0.07612780075785919,
+        "T_squared_mse": 17.128755170518318,
+        "T_squared_min_positive": 13.198113858927398,
+        "prep_proxy_over_T": 0.33069186738778783,
+        "reflection_proxy_over_T": 2.3452974369595196,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 73
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.885780586188048e-16,
+        "mse": 0.35000000004000037,
+        "T_squared_mse": 3.1500000003600035,
+        "T_squared_min_positive": 4.499999999999999,
+        "prep_proxy_over_T": 2.377069887497578,
+        "reflection_proxy_over_T": 6.599999999600001,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 14
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 3,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 0.0,
+        "maximum_mean_error": 5.551115123125783e-17,
+        "mse": 0.7000000000800001,
+        "T_squared_mse": 6.300000000720001,
+        "T_squared_min_positive": 9.0,
+        "prep_proxy_over_T": 2.261781108124041,
+        "reflection_proxy_over_T": 0.0,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 7
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "ideal",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 2.7755575615628914e-16,
+        "mse": 0.21071272011953562,
+        "T_squared_mse": 10.324923285857246,
+        "T_squared_min_positive": 5.748511814110601,
+        "prep_proxy_over_T": 1.0305532271201627,
+        "reflection_proxy_over_T": 6.324959581972503,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 55
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 7,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 8.881784197001252e-16,
+        "maximum_mean_error": 3.885780586188048e-16,
+        "mse": 0.31841269843820824,
+        "T_squared_mse": 15.602222223472205,
+        "T_squared_min_positive": 12.249999999999998,
+        "prep_proxy_over_T": 1.024056364661652,
+        "reflection_proxy_over_T": 3.1523809525159794,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 18
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "ideal",
+        "probability_sum_error": 1.1102230246251565e-15,
+        "maximum_mean_error": 5.551115123125783e-16,
+        "mse": 0.06700400740526635,
+        "T_squared_mse": 15.075901666184928,
+        "T_squared_min_positive": 6.527317207708943,
+        "prep_proxy_over_T": 0.48327731762452875,
+        "reflection_proxy_over_T": 6.151117969988295,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 325
+      },
+      {
+        "p": [
+          0.0,
+          0.0,
+          1e-10,
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.3999999999
+        ],
+        "tree": "comb",
+        "T": 15,
+        "allocation": "conservative_lower_bound_example",
+        "probability_sum_error": 6.661338147750939e-16,
+        "maximum_mean_error": 1.6653345369377348e-16,
+        "mse": 0.07838696394098704,
+        "T_squared_mse": 17.637066886722085,
+        "T_squared_min_positive": 13.1981138589274,
+        "prep_proxy_over_T": 0.4832684821960592,
+        "reflection_proxy_over_T": 3.484902183274767,
+        "zero_mass_entries": 0,
+        "summed_kernel_evaluations": 133
+      }
+    ],
+    "maximum_mean_error": 8.881784197001252e-16,
+    "maximum_scaled_mse_per_node": 9.113093703192344,
+    "minimum_scaled_positive_weight": 1.0
+  },
+  "lcu_and_rus": {
+    "source_dimension": 3,
+    "controlled_data_dimension": 6,
+    "full_lcu_hilbert_dimension": 1152,
+    "subset_mass": 0.5793387192219644,
+    "elementary_unitarity_error": 1.3193920444663343e-14,
+    "common_scalar_controlled_top_block_error": 1.3877787807814457e-16,
+    "trials": [
+      {
+        "amplification_steps": 0,
+        "success_amplitude": 0.14483467980549108,
+        "top_block_error": 6.938893903907228e-17,
+        "maximum_halting_kraus_error": 2.2251526182777403e-16,
+        "first_ten_followup_hit_probabilities": [
+          0.9584858691243244,
+          0.02010623904410047,
+          0.0004217702748897533,
+          8.847510685136022e-06,
+          1.8559497902989324e-07,
+          3.893241553126981e-09,
+          8.166885693902976e-11,
+          1.7131745109343782e-12,
+          3.5937406435189314e-14,
+          7.53862010580343e-16
+        ],
+        "residual_probability_after_ten_followups": 1.6152662851066787e-17,
+        "infinite_trial_target_probability_formula": 0.041092174924100264
+      },
+      {
+        "amplification_steps": 1,
+        "success_amplitude": 0.42235120216408717,
+        "top_block_error": 1.3490129171884659e-15,
+        "maximum_halting_kraus_error": 5.462408430087472e-16,
+        "first_ten_followup_hit_probabilities": [
+          0.6750585403873671,
+          0.12041730559516972,
+          0.02148010375289794,
+          0.003831632463081517,
+          0.0006834886600656868,
+          0.00012192107487853511,
+          2.174834692664661e-05,
+          3.8794818247214374e-06,
+          6.920240549365099e-07,
+          1.2344362320737435e-07
+        ],
+        "residual_probability_after_ten_followups": 2.680065521112339e-08,
+        "infinite_trial_target_probability_formula": 0.30275540408505
+      },
+      {
+        "amplification_steps": 2,
+        "success_amplitude": 0.6644289371401104,
+        "top_block_error": 3.808699570308191e-15,
+        "maximum_halting_kraus_error": 4.638617446052121e-16,
+        "first_ten_followup_hit_probabilities": [
+          0.311960438596076,
+          0.13771986849552273,
+          0.0607986136440272,
+          0.026840509371789435,
+          0.011849167277976079,
+          0.005231002259928366,
+          0.002309308662916396,
+          0.0010194808252087719,
+          0.0004500659308382735,
+          0.00019868872184019868
+        ],
+        "residual_probability_after_ten_followups": 0.00015704370473297144,
+        "infinite_trial_target_probability_formula": 0.6125234586600208
+      },
+      {
+        "amplification_steps": 4,
+        "success_amplitude": 0.9656966678759669,
+        "top_block_error": 1.0043619839886657e-14,
+        "maximum_halting_kraus_error": 1.5105520232029306e-16,
+        "first_ten_followup_hit_probabilities": [
+          0.004546797570800769,
+          0.00424020725770529,
+          0.003954290312759657,
+          0.0036876527318730483,
+          0.003438994508574751,
+          0.0032071032957596847,
+          0.0029908484948222114,
+          0.002789175743359212,
+          0.0026011017745671034,
+          0.0024257096232694433
+        ],
+        "residual_probability_after_ten_followups": 0.03354806433975865,
+        "infinite_trial_target_probability_formula": 0.9651086668234402
+      }
+    ]
+  },
+  "stochastic_composition": {
+    "T": 7,
+    "true_transition_matrix": [
+      [
+        0.8,
+        0.2
+      ],
+      [
+        0.3,
+        0.7
+      ]
+    ],
+    "row_law_table_count": 49,
+    "independent_product_error": 6.661338147750939e-16,
+    "same_table_square": [
+      [
+        0.7205887450304576,
+        0.2794112549695431
+      ],
+      [
+        0.4229772721475251,
+        0.5770227278524755
+      ]
+    ],
+    "true_square": [
+      [
+        0.7000000000000002,
+        0.30000000000000004
+      ],
+      [
+        0.44999999999999996,
+        0.5499999999999999
+      ]
+    ],
+    "same_table_reuse_bias": 0.027022727852475614,
+    "brier_excess": 0.041177490060914645,
+    "probability_estimate_mse": 0.04117749006091439
+  },
+  "contractive_evolution": {
+    "T": 7,
+    "clock_m": 7,
+    "scalar_variance_coefficient": 0.12867965644035742,
+    "cases": [
+      {
+        "a": 0.0,
+        "horizon": 0,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.0,
+        "proved_contraction_bound": 0.0
+      },
+      {
+        "a": 0.0,
+        "horizon": 1,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.06433982822017881,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 2,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.036309527605491665,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 3,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.034506062878982835,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 4,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.034390028268278305,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 5,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.03438256262135808,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 6,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.034382082282917836,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 7,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.0343820513780253,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 8,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.03438204938960987,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 9,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.03438204926167576,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 10,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.03438204925344457,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 11,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.034382049252915214,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.0,
+        "horizon": 12,
+        "row_mse": 0.06433982822017871,
+        "distribution_vector_mse": 0.03438204925288124,
+        "proved_contraction_bound": 0.06433982822017871
+      },
+      {
+        "a": 0.4,
+        "horizon": 0,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.0,
+        "proved_contraction_bound": 0.0
+      },
+      {
+        "a": 0.4,
+        "horizon": 1,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.05404545570495056,
+        "proved_contraction_bound": 0.05404545570495011
+      },
+      {
+        "a": 0.4,
+        "horizon": 2,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.04291454850401977,
+        "proved_contraction_bound": 0.06269272861774214
+      },
+      {
+        "a": 0.4,
+        "horizon": 3,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.036900173776414746,
+        "proved_contraction_bound": 0.06407629228378886
+      },
+      {
+        "a": 0.4,
+        "horizon": 4,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.03503172745732486,
+        "proved_contraction_bound": 0.06429766247035633
+      },
+      {
+        "a": 0.4,
+        "horizon": 5,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.034538819535137155,
+        "proved_contraction_bound": 0.06433308170020713
+      },
+      {
+        "a": 0.4,
+        "horizon": 6,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.03441843875777495,
+        "proved_contraction_bound": 0.06433874877698326
+      },
+      {
+        "a": 0.4,
+        "horizon": 7,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.03439029162718066,
+        "proved_contraction_bound": 0.06433965550926744
+      },
+      {
+        "a": 0.4,
+        "horizon": 8,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.03438388603422693,
+        "proved_contraction_bound": 0.0643398005864329
+      },
+      {
+        "a": 0.4,
+        "horizon": 9,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.034382454013754726,
+        "proved_contraction_bound": 0.06433982379877938
+      },
+      {
+        "a": 0.4,
+        "horizon": 10,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.0343821377470952,
+        "proved_contraction_bound": 0.06433982751275481
+      },
+      {
+        "a": 0.4,
+        "horizon": 11,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.0343820684917846,
+        "proved_contraction_bound": 0.06433982810699089
+      },
+      {
+        "a": 0.4,
+        "horizon": 12,
+        "row_mse": 0.05404545570495011,
+        "distribution_vector_mse": 0.034382053418421266,
+        "proved_contraction_bound": 0.06433982820206866
+      },
+      {
+        "a": 0.95,
+        "horizon": 0,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.0,
+        "proved_contraction_bound": 0.0
+      },
+      {
+        "a": 0.95,
+        "horizon": 1,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.006273133251467056,
+        "proved_contraction_bound": 0.006273133251467426
+      },
+      {
+        "a": 0.95,
+        "horizon": 2,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.011668172965697998,
+        "proved_contraction_bound": 0.011934636010916783
+      },
+      {
+        "a": 0.95,
+        "horizon": 3,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.016295041851291936,
+        "proved_contraction_bound": 0.017044142251319828
+      },
+      {
+        "a": 0.95,
+        "horizon": 4,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.02025072755637769,
+        "proved_contraction_bound": 0.02165547163328357
+      },
+      {
+        "a": 0.95,
+        "horizon": 5,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.02362074614137588,
+        "proved_contraction_bound": 0.025817196400505848
+      },
+      {
+        "a": 0.95,
+        "horizon": 6,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.026480444407577908,
+        "proved_contraction_bound": 0.029573153002923958
+      },
+      {
+        "a": 0.95,
+        "horizon": 7,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.02889615847674043,
+        "proved_contraction_bound": 0.0329629038366063
+      },
+      {
+        "a": 0.95,
+        "horizon": 8,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.030926244167270855,
+        "proved_contraction_bound": 0.03602215396400461
+      },
+      {
+        "a": 0.95,
+        "horizon": 9,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.03262199305731239,
+        "proved_contraction_bound": 0.03878312720398159
+      },
+      {
+        "a": 0.95,
+        "horizon": 10,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.03402844664387428,
+        "proved_contraction_bound": 0.041274905553060806
+      },
+      {
+        "a": 0.95,
+        "horizon": 11,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.03518511968198912,
+        "proved_contraction_bound": 0.04352373551310481
+      },
+      {
+        "a": 0.95,
+        "horizon": 12,
+        "row_mse": 0.006273133251467426,
+        "distribution_vector_mse": 0.03612664260243237,
+        "proved_contraction_bound": 0.04555330455204452
+      }
+    ],
+    "same_table_symmetric_formula_error": 1.6653345369377348e-16
+  },
+  "script_sha256": "1be12a52ec5033fa15e209f238e34ea013014aca67f0c43c2efc41474e586426",
+  "science_files_present_at_run": {
+    "science/README.md": "3e4d446882c2606d00007dfbb1c2e72c3c5351c0890b11987ff86a262d43aad3",
+    "science/conditional-reflection.md": "0b6377d6d801b840ba24b17a08a19b822a70ea26205da32bf9bd6143b99743da",
+    "science/convex-composition.md": "eecf9803d6da4cafbb9a3ee65df6c439d4c8811412aa837a7d497370bd695362",
+    "science/lower-bounds.md": "f6937cbb07a2e11cbfd6239efe454b5f303a81345c432b05b14308a41487a8f0",
+    "science/model.md": "39a77127e969abca7363b8ca4c226a9a66bac9746443b83da477bda2dec9d69b",
+    "science/precision-and-resources.md": "3b5c3c0693ffc1f73c5f9f63aaa0ee42e2556c82a0df0a5edbf258b045c6b52b",
+    "science/scalar-clock.md": "df7254ef1b7ce689eed7ba103b0aa5c8949d46d5149d7ae7d40fe13ded6984ea",
+    "science/simplex-estimator.md": "896414a879e6fe4cf3c36a15f0a7be1eb2ec73dc806b027ecda0f4c70239a413"
+  }
+}
