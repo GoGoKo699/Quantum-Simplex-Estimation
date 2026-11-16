@@ -218,7 +218,7 @@ Each milestone has a conceptual target and earlier dependencies. The map covers 
 - **Understanding target:** Describe the frontier's true conditional leaf distributions, the zero-mean increment revealed by one split, and the disjoint child supports. Use their bounded norm and orthogonal martingale increments to obtain the finite-alphabet trace-MSE bound.
 - **Dependencies and story role:** M11 and M18–M20. This integrates the local statistical mechanism into the full error theorem.
 - **Conceptual connection:** The tree's exact mass conservation and conditional unbiasedness produce a martingale whose endpoint is the returned vector.
-- **Source pointers:** Childs §21.1 for the algorithmic setting; the martingale argument and constant32 are supplied in [uniform mean squared error](../science/simplex-estimator.md#5-uniform-mean-squared-error).
+- **Source pointers:** Childs §21.1 for the algorithmic setting; the martingale argument and constant 32 are supplied in [uniform mean squared error](../science/simplex-estimator.md#5-uniform-mean-squared-error).
 
 ### M22 — Cancellation of the inverse-mass reflection cost
 

@@ -65,10 +65,13 @@ Choose any fixed binary tree with $`d`$ label leaves and a precision parameter $
 
 At an internal node $`S`$ with children $`L,R`$, do the following.
 
-1. If $`W_S=0`$, assign zero weight to both children and skip all conditional-source work.
-2. Otherwise prepare a fresh exact specimen $`|\phi_S\rangle=\Pi_S|\psi\rangle/\sqrt{s_S}`$ using the paid conditional-preparation routine.
-3. Put $`x=TW_S`$. If $`x\lt 3`$, measure whether the specimen lies in $`L`$. Use the resulting $`Y_S\in\{0,1\}`$.
-4. If $`x\ge3`$, choose
+**1.** If $`W_S=0`$, assign zero weight to both children and skip all conditional-source work.
+
+**2.** Otherwise prepare a fresh exact specimen $`|\phi_S\rangle=\Pi_S|\psi\rangle/\sqrt{s_S}`$ using the paid conditional-preparation routine.
+
+**3.** Put $`x=TW_S`$. If $`x\lt 3`$, measure whether the specimen lies in $`L`$. Use the resulting $`Y_S\in\{0,1\}`$.
+
+**4.** If $`x\ge3`$, choose
 
 **Equation (3).**
 
@@ -77,8 +80,9 @@ m_S=2^{\lfloor\log_2(x+1)\rfloor}-1,
 \qquad L_S=m_S+1.
 ```
 
-   Run the scalar sine estimator with this clock, initial specimen $`|\phi_S\rangle`$, success projector $`\Pi_L`$, and the paid controlled conditional reflection. Its result is $`Y_S\in[0,1]`$.
-5. Set
+Run the scalar sine estimator with this clock, initial specimen $`|\phi_S\rangle`$, success projector $`\Pi_L`$, and the paid controlled conditional reflection. Its result is $`Y_S\in[0,1]`$.
+
+**5.** Set
 
 **Equation (4).**
 
@@ -100,7 +104,7 @@ The choice in (3) is the largest available dyadic sine clock not exceeding $`x`$
 \frac{x+1}{2}\lt L_S\le x+1\le\frac43 x.
 ```
 
-The exact allocation rule is stated in the ideal arithmetic model. Section9 supplies a certified finite-arithmetic allocation with the same query bound and error constant64 in place of32. Its arithmetic costs are charged; exact comparison with an unknown probability is never assumed.
+The exact allocation rule is stated in the ideal arithmetic model. Section 9 supplies a certified finite-arithmetic allocation with the same query bound and error constant 64 in place of 32. Its arithmetic costs are charged; exact comparison with an unknown probability is never assumed.
 
 ## 3. What every split preserves
 

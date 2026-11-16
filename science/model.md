@@ -109,7 +109,7 @@ and
 
 For $`d=1`$, return $`(1)`$ without a source query. The displayed constants concern the stated allocation and the two paid primitive bounds; they are not optimized circuit constants. Simplex boundedness also gives the elementary error ceiling $`\mathcal R_2(p)\le2`$.
 
-The construction also gives a certified finite-arithmetic clock-allocation rule with the same query bound and error constant64 in place of32. Its ideal quantum outputs remain exactly unbiased. This qualification avoids treating exact real-number floor comparisons as a free native operation; quantum gate synthesis and output rounding remain separate approximations.
+The construction also gives a certified finite-arithmetic clock-allocation rule with the same query bound and error constant 64 in place of 32. Its ideal quantum outputs remain exactly unbiased. This qualification avoids treating exact real-number floor comparisons as a free native operation; quantum gate synthesis and output rounding remain separate approximations.
 
 At fixed $`d`$, the result is quadratic error reduction in expected source work while preserving exact probabilistic validity and unbiasedness. The stated dimension dependence is not optimal distribution-estimation complexity: achieving root mean squared Euclidean error $`\varepsilon`$ through this bound costs $`O(d^{3/2}/\varepsilon)`$ expected source queries. Ordinary multidimensional quantum estimation already gives stronger dimension-dependent precision bounds under its own guarantees. The addition studied here is the conjunction of the exact simplex constraint and exact unbiasedness.
 
