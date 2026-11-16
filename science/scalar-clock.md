@@ -50,7 +50,7 @@ Let $`H`$ be the path adjacency matrix, $`H_{r,s}=1`$ for $`|r-s|=1`$ and zero o
 
 ```math
 Ha=2ca,
-\qquad DHD=\operatorname{diag}_{j=1}^m(2\cos(j\alpha)).
+\qquad DHD=\mathrm{diag}_{j=1}^m(2\cos(j\alpha)).
 ```
 
 Thus the reported value is a projective measurement of
@@ -87,7 +87,7 @@ The sine addition formula yields
 Consequently both phase vectors, and their mixture with the same mean, have
 
 ```math
-\operatorname{Var}(Y)
+\mathrm{Var}(Y)
 =\kappa_m q(1-q),
 \qquad
 \kappa_m=\frac{m-1}{m+1}\tan^2\!\left(\frac\pi{m+1}\right).

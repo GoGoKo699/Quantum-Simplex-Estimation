@@ -58,7 +58,7 @@ The error is the total Euclidean mean squared error, equivalently the trace of t
 ```math
 \mathcal R_2(p)
 =\mathbb E_p\|\widehat p-p\|_2^2
-=\sum_{i=1}^{d}\operatorname{Var}_p(\widehat p_i).
+=\sum_{i=1}^{d}\mathrm{Var}_p(\widehat p_i).
 ```
 
 Exact normalization refers to the complete returned vector, rather than separately normalized coordinates in expectation. In particular, if $`p_i=0`$, positivity and unbiasedness require $`\widehat p_i=0`$ almost surely. The construction respects these faces without knowing which probabilities vanish.

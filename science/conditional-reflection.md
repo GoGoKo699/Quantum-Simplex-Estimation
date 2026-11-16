@@ -72,7 +72,7 @@ sI,\qquad -B,\qquad -B,\qquad 0.
 The zero branch flips an otherwise zero block flag. The minus signs are known selector phases. Unprepare the selector with Hadamards. With $`P`$ denoting the joint zero selector, program and block flags, the resulting unitary $`A`$ satisfies
 
 ```math
-PAP\big|_{\operatorname{ran}P}
+PAP\big|_{\mathrm{ran}P}
 =\frac{sI-2B}{4}
 =\frac{s}{4}R_\phi.
 ```
@@ -128,7 +128,7 @@ G=-AJA^\dagger J,\qquad V_j=G^jA\quad(j\geq0).
 The uniform-singular-value case of oblivious amplitude amplification gives
 
 ```math
-PV_jP\big|_{\operatorname{ran}P}
+PV_jP\big|_{\mathrm{ran}P}
 =a_jR_\phi,\qquad
 a_j=\sin((2j+1)\theta).
 ```

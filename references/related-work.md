@@ -36,7 +36,7 @@ The sine-clock/discrete-sine-transform construction in [Lin, *Bounded Unbiased A
 ```math
 0\le Z_M\le1,\qquad
 \mathbb E Z_M=p,\qquad
-\operatorname{Var}(Z_M)=\kappa_Mp(1-p),\qquad
+\mathrm{Var}(Z_M)=\kappa_Mp(1-p),\qquad
 \kappa_M=\frac{M-1}{M+1}\tan^2\frac{\pi}{M+1}.
 ```
 

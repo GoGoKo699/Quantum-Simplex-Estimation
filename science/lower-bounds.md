@@ -85,13 +85,13 @@ Q_{\mathrm{cl}}=\Omega(\varepsilon^{-2}).
 ```math
 D(\mathsf P_+\|\mathsf P_-)
 =\mathbb E_+[N]\,
-D\!\left(\operatorname{Ber}(a_+)\middle\|\operatorname{Ber}(a_-)\right).
+D\!\left(\mathrm{Ber}(a_+)\middle\|\mathrm{Ber}(a_-)\right).
 ```
 
 The algorithm's own randomization and stopping decisions contribute no conditional divergence. The identity follows first for finite truncations and then for an integrable stopping time; the Bernoulli log-likelihood increments are bounded on the chosen interval. With natural logarithms,
 
 ```math
-D\!\left(\operatorname{Ber}(a_+)\middle\|\operatorname{Ber}(a_-)\right)
+D\!\left(\mathrm{Ber}(a_+)\middle\|\mathrm{Ber}(a_-)\right)
 =2h\log\frac{1+2h}{1-2h}
 \le16h^2.
 ```

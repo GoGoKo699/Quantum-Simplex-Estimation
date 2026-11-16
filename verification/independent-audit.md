@@ -7,7 +7,7 @@ This note records a separately tasked mathematical pass over the conditional-ref
 For an exact projector $`Q`$, the signal-qubit unitary
 
 ```math
-(H\otimes I)\operatorname{diag}(I,2Q-I)(H\otimes I)
+(H\otimes I)\mathrm{diag}(I,2Q-I)(H\otimes I)
 ```
 
 has zero-signal block $`[I+(2Q-I)]/2=Q`$. Multiplying projector encodings with separate signal registers therefore yields top block $`\Pi_S|\psi\rangle\langle\psi|\Pi_S`$. The separate program-register construction yields the scalar block $`sI`$. These are different resources: a postselected specimen alone does not supply the conditional reflection.

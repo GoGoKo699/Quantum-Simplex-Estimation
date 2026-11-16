@@ -24,7 +24,7 @@ A sine-clock block with $`m`$ controlled Grover steps returns $`Y\in\{z_1,\ldots
 \qquad
 \mathbb E Y=q,
 \qquad
-\operatorname{Var}(Y)=\kappa_m q(1-q),
+\mathrm{Var}(Y)=\kappa_m q(1-q),
 \qquad
 \kappa_m=\frac{m-1}{m+1}\tan^2\!\left(\frac\pi{m+1}\right).
 ```
@@ -170,7 +170,7 @@ This is a probability statement derived from the ideal output law, not an assump
 At either type of split,
 
 ```math
-W_S^2\operatorname{Var}(Y_S\mid\mathcal F)
+W_S^2\mathrm{Var}(Y_S\mid\mathcal F)
 \le\frac{16}{T^2}.
 \tag{11}
 ```
@@ -217,7 +217,7 @@ Martingale increments at different steps are orthogonal in mean: conditioning th
 \mathbb E\|\widehat p-p\|_2^2
 &=\sum_{S\text{ internal}}\mathbb E\|\delta_S\|_2^2\\
 &\le2\sum_{S\text{ internal}}
-\mathbb E\!\left[W_S^2\operatorname{Var}(Y_S\mid\mathcal F)\right]\\
+\mathbb E\!\left[W_S^2\mathrm{Var}(Y_S\mid\mathcal F)\right]\\
 &\le\frac{32(d-1)}{T^2}.
 \end{aligned}
 \tag{13}
@@ -300,10 +300,10 @@ The invariant (8) implies
 
 Use $`T\overline W`$ in place of $`TW`$ in the threshold and clock rule (3), while retaining the exact mathematical factors $`Y`$ in the returned weights. This is a past-record-dependent integer clock choice, so the conditional mean (6) and exact unbiasedness are unchanged. Since the resulting $`m\le T\overline W\le TW`$, the minimum-positive-weight argument and both source-query bounds are unchanged as well.
 
-On a direct-sample branch, $`T\overline W<3`$ implies $`TW<4`$, giving $`W^2\operatorname{Var}(Y)\le4/T^2`$. On a sine branch, the proof of (11) instead gives
+On a direct-sample branch, $`T\overline W<3`$ implies $`TW<4`$, giving $`W^2\mathrm{Var}(Y)\le4/T^2`$. On a sine branch, the proof of (11) instead gives
 
 ```math
-W^2\operatorname{Var}(Y\mid\mathcal F)
+W^2\mathrm{Var}(Y\mid\mathcal F)
 \le\frac{16W^2}{T^2\overline W^2}
 \le\frac{256}{9T^2}.
 ```

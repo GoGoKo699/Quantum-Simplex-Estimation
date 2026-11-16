@@ -43,6 +43,7 @@ jobs:
             --revision "$CAPTURE_REVISION" --page science/model.md \
             --output "$RUNNER_TEMP/hosted-probe"
       - name: Compare every hosted mathematical expression
+        if: ${{ !cancelled() }}
         run: |
           export NODE_PATH="$RUNNER_TEMP/math-runtime/node_modules"
           node verification/hosted_math/capture_hosted_math.cjs \

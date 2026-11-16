@@ -7,7 +7,7 @@ The [simplex estimator](simplex-estimator.md) produces a valid probability vecto
 Let $`v_1,\ldots,v_d`$ be known vectors in a real finite-dimensional Hilbert space, let
 
 ```math
-K=\operatorname{conv}\{v_1,\ldots,v_d\},\qquad
+K=\mathrm{conv}\{v_1,\ldots,v_d\},\qquad
 x=\sum_{j=1}^{d}p_jv_j,\qquad
 D=\max_{i,j}\|v_i-v_j\|_2.
 ```
@@ -45,7 +45,7 @@ The expected number of original sampler/inverse calls is $`O((d-1)T)`$. This is 
 Both conditional means belong to $`K`$, so $`\|x_L-x_R\|_2\le D`$. The local estimate has $`\mathbb E[Y\mid\text{past}]=r`$ and the simplex construction establishes
 
 ```math
-\mathbb E\!\left[W^2\operatorname{Var}(Y\mid\text{past})\right]
+\mathbb E\!\left[W^2\mathrm{Var}(Y\mid\text{past})\right]
 \le C_0/T^2
 ```
 
@@ -227,7 +227,7 @@ Q=\begin{pmatrix}X&1-X\\Y&1-Y\end{pmatrix},
 \qquad
 \mathbb E X=\mathbb E Y=1/2,
 \qquad
-\operatorname{Var}(X)=\operatorname{Var}(Y)=v>0,
+\mathrm{Var}(X)=\mathrm{Var}(Y)=v>0,
 ```
 
 where $`X,Y`$ are independent. Then $`\mathbb E Q=P`$, but direct multiplication gives

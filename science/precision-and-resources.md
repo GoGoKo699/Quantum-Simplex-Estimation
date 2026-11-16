@@ -78,13 +78,13 @@ The cost argument is unchanged because $`m\le TW`$. The smallest-positive-weight
 The variance constant increases. In a one-specimen branch, $`TW<4`$ and
 
 ```math
-W^2\operatorname{Var}(Y\mid W)\le W^2/4<4/T^2.
+W^2\mathrm{Var}(Y\mid W)\le W^2/4<4/T^2.
 ```
 
 In a clock branch, $`L=m+1>(T\underline W+1)/2\ge3TW/8`$. Using the scalar bound $`\kappa_m\le16/L^2`$ and $`r(1-r)\le1/4`$ gives
 
 ```math
-W^2\operatorname{Var}(Y\mid W)
+W^2\mathrm{Var}(Y\mid W)
 \le\frac{256}{9T^2}.
 ```
 
