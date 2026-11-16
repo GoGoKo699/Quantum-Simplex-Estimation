@@ -1,0 +1,18 @@
+# Quantum Simplex Estimation
+
+This repository studies exactly unbiased classical probability-vector estimates whose every realization lies in the simplex. Fixed-alphabet mean squared error decreases quadratically with expected paid reversible-source queries. The algorithm has unbounded stopping-time tails; finite capped versions have controlled bias. Do not claim optimal dimension dependence or an end-to-end hardware advantage.
+
+## Reading by purpose
+
+- Story and headline: README.md and science/README.md.
+- Exact source/access/output model and theorem: science/model.md.
+- Full algorithm and unbiasedness, zero-mass, minimum-weight, martingale-error and expected-query proofs: science/simplex-estimator.md.
+- Inherited scalar sine-clock circuit and moment proof: science/scalar-clock.md.
+- Exact controlled conditional reflection without a supplied conditional inverse: science/conditional-reflection.md.
+- Native gates/workspace, finite cap, approximate events, rounding and statistical bias: science/precision-and-resources.md.
+- Matched fixed-dimension expected-query precision bounds and sample-only classical comparison: science/lower-bounds.md.
+- Finite known convex ranges, stochastic matrices, freshness, contraction and reuse counterexample: science/convex-composition.md.
+- Attribution and literature comparison: references/related-work.md and references/references.bib.
+- Reproduction and finite-check limits: verification/README.md and verification/run_all.py.
+
+Keep these distinctions explicit: a conditional specimen is not a coherent source inverse; controlled retry gates need a common scalar success amplitude; exact zero-mass pruning belongs to the ideal theorem; finite synthesis and truncation may introduce bias; fresh stochastic matrices may compose unbiasedly, whereas reusing one random table in powers need not.
