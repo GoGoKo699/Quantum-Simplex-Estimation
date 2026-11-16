@@ -24,7 +24,7 @@ A sine-clock block with $`m`$ controlled Grover steps returns $`Y\in\{z_1,\ldots
 \qquad
 \mathbb E Y=q,
 \qquad
-\operatorname{Var}(Y)=\kappa_m q(1-q),
+\mathrm{Var}(Y)=\kappa_m q(1-q),
 \qquad
 \kappa_m=\frac{m-1}{m+1}\tan^2\!\left(\frac\pi{m+1}\right).
 ```
@@ -41,18 +41,20 @@ Our conditional primitive returns $`V=I-2|\phi\rangle\langle\phi|`$. Thus the fi
 
 Two scalar facts will be used with explicit constants. Since $`\alpha\le\pi/4`$, convexity of the tangent function gives $`\tan\alpha\le4\alpha/\pi`$, and hence
 
+**Equation (1).**
+
 ```math
 \kappa_m\le\frac{16}{L^2}.
-\tag{1}
 ```
 
 Also $`z_1=0`$, $`z_m=1`$, the readouts increase with $`j`$, and they are symmetric under $`z\mapsto1-z`$. The smallest positive readout, and the smallest positive complementary readout, is
+
+**Equation (2).**
 
 ```math
 z_2
 =\frac{\sin(3\alpha/2)\sin(\alpha/2)}{\cos\alpha}
 \ge\frac{3}{L^2}.
-\tag{2}
 ```
 
 For the inequality, both sine arguments lie in $`[0,\pi/2]`$, where $`\sin u\ge2u/\pi`$, and $`\cos\alpha\le1`$.
@@ -63,39 +65,46 @@ Choose any fixed binary tree with $`d`$ label leaves and a precision parameter $
 
 At an internal node $`S`$ with children $`L,R`$, do the following.
 
-1. If $`W_S=0`$, assign zero weight to both children and skip all conditional-source work.
-2. Otherwise prepare a fresh exact specimen $`|\phi_S\rangle=\Pi_S|\psi\rangle/\sqrt{s_S}`$ using the paid conditional-preparation routine.
-3. Put $`x=TW_S`$. If $`x<3`$, measure whether the specimen lies in $`L`$. Use the resulting $`Y_S\in\{0,1\}`$.
-4. If $`x\ge3`$, choose
+**1.** If $`W_S=0`$, assign zero weight to both children and skip all conditional-source work.
+
+**2.** Otherwise prepare a fresh exact specimen $`|\phi_S\rangle=\Pi_S|\psi\rangle/\sqrt{s_S}`$ using the paid conditional-preparation routine.
+
+**3.** Put $`x=TW_S`$. If $`x\lt 3`$, measure whether the specimen lies in $`L`$. Use the resulting $`Y_S\in\{0,1\}`$.
+
+**4.** If $`x\ge3`$, choose
+
+**Equation (3).**
 
 ```math
 m_S=2^{\lfloor\log_2(x+1)\rfloor}-1,
 \qquad L_S=m_S+1.
-\tag{3}
 ```
 
-   Run the scalar sine estimator with this clock, initial specimen $`|\phi_S\rangle`$, success projector $`\Pi_L`$, and the paid controlled conditional reflection. Its result is $`Y_S\in[0,1]`$.
-5. Set
+Run the scalar sine estimator with this clock, initial specimen $`|\phi_S\rangle`$, success projector $`\Pi_L`$, and the paid controlled conditional reflection. Its result is $`Y_S\in[0,1]`$.
+
+**5.** Set
+
+**Equation (4).**
 
 ```math
 W_L=W_SY_S,
 \qquad
 W_R=W_S(1-Y_S).
-\tag{4}
 ```
 
 At the end return the leaf weights $`\widehat p_i=W_{\{i\}}`$. A conditional specimen is consumed by its one split; the algorithm does not assume that a previously measured or disturbed specimen can be reused as a fresh source.
 
 The choice in (3) is the largest available dyadic sine clock not exceeding $`x`$. At the fence $`x=3`$ it chooses $`m_S=3`$. For every large-clock branch,
 
+**Equation (5).**
+
 ```math
 3\le m_S\le x,
 \qquad
-\frac{x+1}{2}<L_S\le x+1\le\frac43 x.
-\tag{5}
+\frac{x+1}{2}\lt L_S\le x+1\le\frac43 x.
 ```
 
-The exact allocation rule is stated in the ideal arithmetic model. Section9 supplies a certified finite-arithmetic allocation with the same query bound and error constant64 in place of32. Its arithmetic costs are charged; exact comparison with an unknown probability is never assumed.
+The exact allocation rule is stated in the ideal arithmetic model. Section 9 supplies a certified finite-arithmetic allocation with the same query bound and error constant 64 in place of 32. Its arithmetic costs are charged; exact comparison with an unknown probability is never assumed.
 
 ## 3. What every split preserves
 
@@ -117,18 +126,20 @@ q_S=\frac{s_L}{s_S}.
 
 Let $`\mathcal F`$ contain all completed earlier split records and all earlier classical decisions. If $`W_S>0`$, the fresh local block satisfies
 
+**Equation (6).**
+
 ```math
 \mathbb E[Y_S\mid\mathcal F]=q_S.
-\tag{6}
 ```
 
 For the ordinary-sample branch this is its measurement probability. For the sine branch it is the scalar unbiasedness theorem at the clock selected from $`\mathcal F`$. The exact conditional reflection remains a unitary channel on its data, including arbitrary clock entanglement, despite its measured retry history. Its successful histories do not introduce a data-dependent conditioning error.
 
 Induction over the tree now proves
 
+**Equation (7).**
+
 ```math
 \mathbb E W_S=s_S
-\tag{7}
 ```
 
 for every node. It holds at the root. If it holds at a node of positive true mass, (6) gives $`\mathbb E W_L=q_S\mathbb E W_S=s_L`$, and likewise for $`R`$. If $`s_S=0`$, nonnegativity and (7) imply $`W_S=0`$ almost surely, so the algorithm skips that node. This establishes the induction without invoking a conditional routine at zero mass. At the leaves, (7) is exactly $`\mathbb E\widehat p=p`$.
@@ -139,28 +150,31 @@ This also proves almost-sure termination by induction: the tree contains finitel
 
 The discrete readout prevents a rare node from being entered too often. More precisely, every node obeys the pathwise invariant
 
+**Equation (8).**
+
 ```math
 W_S=0\quad\text{or}\quad W_S\ge\frac1{T^2}.
-\tag{8}
 ```
 
 The root satisfies it because $`T\ge1`$. A direct Bernoulli split gives each positive child the parent's weight. In a large-clock split, either child, when positive, has weight at least $`W_Sz_2`$. Equations (2) and (5) give
+
+**Equation (9).**
 
 ```math
 W_Sz_2
 \ge\frac{3W_S}{L_S^2}
 \ge\frac{27}{16T^2W_S}
 \ge\frac1{T^2},
-\tag{9}
 ```
 
-because $`0<W_S\le1`$. This proves (8) at every depth; the lower bound does not deteriorate down the tree.
+because $`0\lt W_S\le1`$. This proves (8) at every depth; the lower bound does not deteriorate down the tree.
 
 Combining (7) and (8) yields the entry-probability bound
 
+**Equation (10).**
+
 ```math
 \Pr(W_S>0)\le\min\{1,T^2s_S\}.
-\tag{10}
 ```
 
 This is a probability statement derived from the ideal output law, not an assumption that the algorithm knows $`s_S`$.
@@ -169,13 +183,14 @@ This is a probability statement derived from the ideal output law, not an assump
 
 At either type of split,
 
+**Equation (11).**
+
 ```math
-W_S^2\operatorname{Var}(Y_S\mid\mathcal F)
+W_S^2\mathrm{Var}(Y_S\mid\mathcal F)
 \le\frac{16}{T^2}.
-\tag{11}
 ```
 
-For $`TW_S<3`$, the left side is $`W_S^2q_S(1-q_S)\le9/(4T^2)`$. For $`TW_S\ge3`$, (1) and (5), together with $`q_S(1-q_S)\le1/4`$, give
+For $`TW_S\lt 3`$, the left side is $`W_S^2q_S(1-q_S)\le9/(4T^2)`$. For $`TW_S\ge3`$, (1) and (5), together with $`q_S(1-q_S)\le1/4`$, give
 
 ```math
 W_S^2\kappa_{m_S}q_S(1-q_S)
@@ -194,10 +209,11 @@ Z_k=\sum_{S\text{ in frontier}}W_Sr_S.
 
 Initially $`Z_0=p`$. At the end $`Z_{d-1}=\widehat p`$. Splitting a positive-mass node changes this vector by
 
+**Equation (12).**
+
 ```math
 \delta_S
 =W_S(Y_S-q_S)(r_L-r_R).
-\tag{12}
 ```
 
 The identity uses $`r_S=q_Sr_L+(1-q_S)r_R`$. A skipped node has zero increment. By (6), each increment has conditional mean zero. Thus $`(Z_k)`$ is a finite vector martingale.
@@ -205,22 +221,23 @@ The identity uses $`r_S=q_Sr_L+(1-q_S)r_R`$. A skipped node has zero increment. 
 The child distributions have disjoint supports and each has Euclidean norm at most one. Consequently
 
 ```math
-\|r_L-r_R\|_2^2
-=\|r_L\|_2^2+\|r_R\|_2^2
+\Vert r_L-r_R\Vert _2^2
+=\Vert r_L\Vert _2^2+\Vert r_R\Vert _2^2
 \le2.
 ```
 
 Martingale increments at different steps are orthogonal in mean: conditioning the later increment on the earlier record makes its inner product with any earlier increment vanish. Equations (11) and (12) therefore give
 
+**Equation (13).**
+
 ```math
 \begin{aligned}
-\mathbb E\|\widehat p-p\|_2^2
-&=\sum_{S\text{ internal}}\mathbb E\|\delta_S\|_2^2\\
+\mathbb E\Vert \widehat p-p\Vert _2^2
+&=\sum_{S\text{ internal}}\mathbb E\Vert \delta_S\Vert _2^2\\
 &\le2\sum_{S\text{ internal}}
-\mathbb E\!\left[W_S^2\operatorname{Var}(Y_S\mid\mathcal F)\right]\\
+\mathbb E\!\left[W_S^2\mathrm{Var}(Y_S\mid\mathcal F)\right]\\
 &\le\frac{32(d-1)}{T^2}.
 \end{aligned}
-\tag{13}
 ```
 
 This is a finite-alphabet uniform bound, including every face of the simplex. It is not a dimension-optimal multivariate estimation law.
@@ -229,32 +246,35 @@ This is a finite-alphabet uniform bound, including every face of the simplex. It
 
 Fix an internal node of positive true mass $`s=s_S`$. Its initial conditional specimen costs at most $`C_{\rm prep}/\sqrt{s}`$ expected source queries when the node is entered. By (10), its unconditional contribution is at most
 
+**Equation (14).**
+
 ```math
 \frac{C_{\rm prep}}{\sqrt{s}}\Pr(W_S>0)
 \le C_{\rm prep}\frac{\min\{1,T^2s\}}{\sqrt{s}}
 \le C_{\rm prep}T.
-\tag{14}
 ```
 
 The last inequality follows by separating $`s\le T^{-2}`$ and $`s\ge T^{-2}`$. This is the step that pays for entering rare subsets.
 
 A large-clock block makes exactly $`m_S`$ controlled Grover calls, each requiring one paid controlled conditional reflection and known subset logic. Set $`m_S=0`$ for the direct-sample or skipped branches. Since $`m_S\le TW_S`$, the expected source-query contribution of these reflections is
 
+**Equation (15).**
+
 ```math
 \mathbb E\!\left[\frac{C_{\rm ref}m_S}{s}\right]
 \le C_{\rm ref}T\frac{\mathbb EW_S}{s}
 =C_{\rm ref}T.
-\tag{15}
 ```
 
 The reflection primitive's expected bound holds on arbitrary data and reference conditional on the current history. It therefore applies to every call inside the coherent clock block. Linearity of expectation adds those costs; no independence of successive runtimes is assumed. Its measured histories implement the intended controlled unitary exactly, so the random runtimes do not alter the scalar law used in (6).
 
 Zero-mass nodes are skipped almost surely and contribute nothing. Summing (14) and (15) over the $`d-1`$ internal nodes proves
 
+**Equation (16).**
+
 ```math
 \mathbb E Q
 \le(C_{\rm prep}+C_{\rm ref})(d-1)T.
-\tag{16}
 ```
 
 All inverses and failed conditional attempts are included through the primitive bounds. At the root one may use the original source and its direct reflection; using the general bound only loosens the constant.
@@ -271,7 +291,7 @@ Take the tree whose root divides $`\{1,2\}`$ from $`\{3\}`$. Its first result is
 
 For example, when $`p=(0.2,0.3,0.5)`$, the conditional mean of $`Y`$ is $`0.4`$ at every selected clock, and the mean of $`Z`$ is $`0.5`$. Thus the first two coordinates have means $`0.2`$ and $`0.3`$ even though the second clock depends on the random first result. Their sum equals $`Z`$ in every realization, so no normalization repair is needed.
 
-If instead $`p_1+p_2=0`$, the first output is exactly $`Z=0`$ and the undefined conditional source is never called. If $`p_1=0<p_2`$, the conditional second output is exactly $`Y=0`$. These endpoint properties are part of the proof, rather than exceptions removed by a positive-probability promise.
+If instead $`p_1+p_2=0`$, the first output is exactly $`Z=0`$ and the undefined conditional source is never called. If $`p_1=0\lt p_2`$, the conditional second output is exactly $`Y=0`$. These endpoint properties are part of the proof, rather than exceptions removed by a positive-probability promise.
 
 ## 8. Scope of the result
 
@@ -293,30 +313,33 @@ For an exactly positive weight, compute a rational approximation $`\widetilde W`
 
 The invariant (8) implies
 
+**Equation (17).**
+
 ```math
 \frac34 W\le\overline W\le W.
-\tag{17}
 ```
 
 Use $`T\overline W`$ in place of $`TW`$ in the threshold and clock rule (3), while retaining the exact mathematical factors $`Y`$ in the returned weights. This is a past-record-dependent integer clock choice, so the conditional mean (6) and exact unbiasedness are unchanged. Since the resulting $`m\le T\overline W\le TW`$, the minimum-positive-weight argument and both source-query bounds are unchanged as well.
 
-On a direct-sample branch, $`T\overline W<3`$ implies $`TW<4`$, giving $`W^2\operatorname{Var}(Y)\le4/T^2`$. On a sine branch, the proof of (11) instead gives
+On a direct-sample branch, $`T\overline W\lt 3`$ implies $`TW\lt 4`$, giving $`W^2\mathrm{Var}(Y)\le4/T^2`$. On a sine branch, the proof of (11) instead gives
 
 ```math
-W^2\operatorname{Var}(Y\mid\mathcal F)
+W^2\mathrm{Var}(Y\mid\mathcal F)
 \le\frac{16W^2}{T^2\overline W^2}
 \le\frac{256}{9T^2}.
 ```
 
 Consequently this allocation satisfies the convenient uniform bound
 
+**Equation (18).**
+
 ```math
-\mathbb E\|\widehat p-p\|_2^2
-\le\frac{64(d-1)}{T^2},
-\qquad
+\begin{aligned}
+\mathbb E\Vert \widehat p-p\Vert _2^2
+&\le\frac{64(d-1)}{T^2},\\
 \mathbb E Q
-\le(C_{\rm prep}+C_{\rm ref})(d-1)T.
-\tag{18}
+&\le(C_{\rm prep}+C_{\rm ref})(d-1)T.
+\end{aligned}
 ```
 
 For rational or integer supplied $`T`$, deciding the next clock from rational $`\overline W`$ uses ordinary finite arithmetic. At most $`d-1`$ known readout factors occur along a path. Evaluating each factor and the product with certified errors of order $`1/(dT^2)`$ suffices, using $`O(\log(d+1)+\log(T+1))`$ fractional bits plus ordinary precision overhead. This describes an effective allocation route, not free arithmetic or a new optimal gate-complexity theorem. The [resource account](precision-and-resources.md) distinguishes this classical allocation approximation from synthesizing the quantum gates or rounding the returned vector: those other approximations can change the estimator law and need their own error budget.

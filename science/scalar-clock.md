@@ -50,7 +50,7 @@ Let $`H`$ be the path adjacency matrix, $`H_{r,s}=1`$ for $`|r-s|=1`$ and zero o
 
 ```math
 Ha=2ca,
-\qquad DHD=\operatorname{diag}_{j=1}^m(2\cos(j\alpha)).
+\qquad DHD=\mathrm{diag}_{j=1}^m(2\cos(j\alpha)).
 ```
 
 Thus the reported value is a projective measurement of
@@ -70,7 +70,7 @@ At $`q=0`$ only $`j=1`$ occurs and $`Y=0`$; at $`q=1`$ only $`j=m`$ occurs and $
 
 ## Exact variance
 
-Since the mean is $`q`$, the variance on a phase vector is $`\|(B-qI)v(\varphi)\|^2`$. Direct substitution gives
+Since the mean is $`q`$, the variance on a phase vector is $`\Vert (B-qI)v(\varphi)\Vert ^2`$. Direct substitution gives
 
 ```math
 [(B-qI)v(\varphi)]_r
@@ -87,7 +87,7 @@ The sine addition formula yields
 Consequently both phase vectors, and their mixture with the same mean, have
 
 ```math
-\operatorname{Var}(Y)
+\mathrm{Var}(Y)
 =\kappa_m q(1-q),
 \qquad
 \kappa_m=\frac{m-1}{m+1}\tan^2\!\left(\frac\pi{m+1}\right).

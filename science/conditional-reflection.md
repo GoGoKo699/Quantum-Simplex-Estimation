@@ -17,7 +17,7 @@ The two operations are:
 
 | Operation | Exact output in the ideal model | Expected source calls |
 | --- | --- | --- |
-| `PrepareConditional` | One specimen in $`|\phi\rangle`$ | $`C_{\mathrm{prep}}/\sqrt{s}`$ |
+| `PrepareConditional` | One specimen in $`\lvert\phi\rangle`$ | $`C_{\mathrm{prep}}/\sqrt{s}`$ |
 | `ReflectConditional` | $`R_\phi`$ on arbitrary data, or its controlled version | $`C_{\mathrm{ref}}/s`$ |
 
 Both halt almost surely without knowing $`s`$. Source calls count applications of $`U`$ and $`U^\dagger`$ equally. The constants are universal and need not be optimized; the explicit reflection schedule below permits $`C_{\mathrm{ref}}=512`$ for the stated four-query block encoder. Known predicates, zero tests, ancillary registers and classical loops have additional costs stated below.
@@ -72,7 +72,7 @@ sI,\qquad -B,\qquad -B,\qquad 0.
 The zero branch flips an otherwise zero block flag. The minus signs are known selector phases. Unprepare the selector with Hadamards. With $`P`$ denoting the joint zero selector, program and block flags, the resulting unitary $`A`$ satisfies
 
 ```math
-PAP\big|_{\operatorname{ran}P}
+PAP\big|_{\mathrm{ran}P}
 =\frac{sI-2B}{4}
 =\frac{s}{4}R_\phi.
 ```
@@ -128,7 +128,7 @@ G=-AJA^\dagger J,\qquad V_j=G^jA\quad(j\geq0).
 The uniform-singular-value case of oblivious amplitude amplification gives
 
 ```math
-PV_jP\big|_{\operatorname{ran}P}
+PV_jP\big|_{\mathrm{ran}P}
 =a_jR_\phi,\qquad
 a_j=\sin((2j+1)\theta).
 ```
@@ -148,7 +148,7 @@ The following argument applies to any unitary $`V`$ with block $`PVP=aR`$, where
 
 Each check must be the **binary nondemolition measurement** of all-zero versus its complement. Measuring every signal qubit separately on a failure would refine the measurement, destroy the two-subspace argument and invalidate the restoration claim. Implement a binary check by computing the all-zero predicate into one flag, measuring only that flag, uncomputing the predicate and resetting the measured flag.
 
-For the proof, let $`|i\rangle=|0\rangle|d\rangle`$ and $`|o\rangle=|0\rangle R|d\rangle`$. For $`0<p<1`$, there are unit vectors $`|f\rangle,|g\rangle`$ in the nonzero-signal subspace such that
+For the proof, let $`|i\rangle=|0\rangle|d\rangle`$ and $`|o\rangle=|0\rangle R|d\rangle`$. For $`0\lt p\lt 1`$, there are unit vectors $`|f\rangle,|g\rangle`$ in the nonzero-signal subspace such that
 
 ```math
 V|i\rangle=a|o\rangle+\sqrt{1-p}|f\rangle,
@@ -198,7 +198,7 @@ In particular, $`\overline p_m\geq1/4`$ when $`m\geq1/\sin(2\theta)`$. The whole
 A convenient implementation uses integer scales $`m_k=2^k`$. At each scale, run at most four independently randomized trials, stopping on `DONE`; after four `RETRY` outcomes double $`m`$. This is a BBHT scheduling variant with no real-valued scale computation. Let $`m_*`$ be the first such scale above $`1/\sin(2\theta)`$. Then
 
 ```math
-m_*<\frac2{\sin(2\theta)},\qquad
+m_*\lt \frac2{\sin(2\theta)},\qquad
 \Pr(\hbox{four RETRYs at a scale }m\geq m_*)
 \leq(3/4)^4=\frac{81}{256}.
 ```
@@ -211,10 +211,10 @@ One randomized trial costs at most $`8m`$ source calls in expectation: its expec
 &\leq32(m_*-1)
 +32m_*\sum_{\ell\geq0}
 \left(2\frac{81}{256}\right)^\ell\\
-&<120m_*
-<\frac{240}{\sin(2\theta)}
+&\lt 120m_*
+\lt \frac{240}{\sin(2\theta)}
 \leq\frac{1920}{\sqrt{15}\,s}
-<\frac{512}{s}.
+\lt \frac{512}{s}.
 \end{aligned}
 ```
 
@@ -226,15 +226,15 @@ The penultimate inequality uses
 \geq\frac{\sqrt{15}}8s.
 ```
 
-The same stage tail proves almost-sure termination. The inner restoration loop also halts almost surely whenever entered: its continuing probability is a power of $`p<1`$; when $`p=1`$ it is never entered.
+The same stage tail proves almost-sure termination. The inner restoration loop also halts almost surely whenever entered: its continuing probability is a power of $`p\lt 1`$; when $`p=1`$ it is never entered.
 
-The usual more finely rounded BBHT schedule also works: take $`m_k=\lceil(6/5)^k\rceil`$ and one randomized input-restoring trial per scale. Before the first scale exceeding $`b=1/\sin(2\theta)`$, the sum of scales is $`O(b)`$. Subsequently the reach probability is at most $`(3/4)^\ell`$, while $`m_{K+\ell}\leq(6/5)^{K+\ell}+1`$. The resulting cost series converges because $`(3/4)(6/5)=9/10<1`$. This explicitly accounts for rounding instead of assuming an exact multiplicative ratio between consecutive integers. The powers-of-two, four-trial version above supplies the concrete constant used here.
+The usual more finely rounded BBHT schedule also works: take $`m_k=\lceil(6/5)^k\rceil`$ and one randomized input-restoring trial per scale. Before the first scale exceeding $`b=1/\sin(2\theta)`$, the sum of scales is $`O(b)`$. Subsequently the reach probability is at most $`(3/4)^\ell`$, while $`m_{K+\ell}\leq(6/5)^{K+\ell}+1`$. The resulting cost series converges because $`(3/4)(6/5)=9/10\lt 1`$. This explicitly accounts for rounding instead of assuming an exact multiplicative ratio between consecutive integers. The powers-of-two, four-trial version above supplies the concrete constant used here.
 
 ## 6. Ordinary conditional-state preparation
 
 Preparation is a separate, cheaper operation because a failed fresh preparation can be discarded. Write $`\sin^2\eta=s`$. Ordinary Grover amplification using reflections about $`|\psi\rangle`$ and $`\Pi`$ leaves the successful component proportional to $`|\phi\rangle`$, with coefficient $`\sin((2j+1)\eta)`$. Projecting onto $`\Pi`$ therefore returns exactly $`|\phi\rangle`$ on every successful attempt, up to an irrelevant global phase. The number of source calls for an attempt is $`2j+1`$.
 
-Use the same integer-scale randomized schedule, with a fresh source state on each attempt. To cover masses close to one uniformly, precede each randomized attempt by one direct preparation and binary $`\Pi`$ check. If $`s\geq1/4`$, this direct check alone gives a constant success probability at every scale. If $`s<1/4`$, the random-length success average is at least $`1/4`$ once
+Use the same integer-scale randomized schedule, with a fresh source state on each attempt. To cover masses close to one uniformly, precede each randomized attempt by one direct preparation and binary $`\Pi`$ check. If $`s\geq1/4`$, this direct check alone gives a constant success probability at every scale. If $`s\lt 1/4`$, the random-length success average is at least $`1/4`$ once
 
 ```math
 m\geq\frac1{\sin(2\eta)}=O(s^{-1/2}),

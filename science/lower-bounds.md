@@ -7,12 +7,12 @@ The estimator's precision exponent is optimal for fixed output dimension in the 
 Fix $`d\ge2`$. Let an algorithm return an arbitrary real vector $`\widehat p`$; the lower bound does not require positivity or unbiasedness. Suppose, uniformly over all allowed coherent source oracles,
 
 ```math
-\mathbb E\|\widehat p-p\|_2^2\le\varepsilon^2,
+\mathbb E\Vert \widehat p-p\Vert _2^2\le\varepsilon^2,
 \qquad
 \mathbb E N\le Q.
 ```
 
-Here $`N`$ counts every source, inverse-source and controlled-source call. Measurements, adaptive stopping, arbitrary known controls and extra workspace are permitted. For $`0<\varepsilon\le1/16`$,
+Here $`N`$ counts every source, inverse-source and controlled-source call. Measurements, adaptive stopping, arbitrary known controls and extra workspace are permitted. For $`0\lt \varepsilon\le1/16`$,
 
 ```math
 Q=\Omega(\varepsilon^{-1}).
@@ -52,7 +52,7 @@ source calls and assigning any decision on an abort. The abort probability is at
 A usual query hybrid applies also to controlled calls, inverse calls and classically selected call types. Their operator-norm difference is bounded by
 
 ```math
-\Delta=\|U_{\theta_+}-U_{\theta_-}\|
+\Delta=\Vert U_{\theta_+}-U_{\theta_-}\Vert
 \le |\theta_+-\theta_-|
 \le\frac{4h}{\sqrt3}
 =\frac{16\varepsilon}{\sqrt3},
@@ -83,15 +83,15 @@ Q_{\mathrm{cl}}=\Omega(\varepsilon^{-2}).
 **Proof.** Use the same Bernoulli pair $`a_\pm=1/2\pm h`$ and the same threshold test. Its decision distributions have total-variation distance at least $`7/8`$. For the stopped transcript, the relative-entropy chain rule gives
 
 ```math
-D(\mathsf P_+\|\mathsf P_-)
+D(\mathsf P_+\Vert \mathsf P_-)
 =\mathbb E_+[N]\,
-D\!\left(\operatorname{Ber}(a_+)\middle\|\operatorname{Ber}(a_-)\right).
+D\!\left(\mathrm{Ber}(a_+)\middle\Vert \mathrm{Ber}(a_-)\right).
 ```
 
 The algorithm's own randomization and stopping decisions contribute no conditional divergence. The identity follows first for finite truncations and then for an integrable stopping time; the Bernoulli log-likelihood increments are bounded on the chosen interval. With natural logarithms,
 
 ```math
-D\!\left(\operatorname{Ber}(a_+)\middle\|\operatorname{Ber}(a_-)\right)
+D\!\left(\mathrm{Ber}(a_+)\middle\Vert \mathrm{Ber}(a_-)\right)
 =2h\log\frac{1+2h}{1-2h}
 \le16h^2.
 ```
@@ -100,7 +100,7 @@ Pinsker's inequality and data processing therefore imply
 
 ```math
 2\left(\frac78\right)^2
-\le D(\mathsf P_+\|\mathsf P_-)
+\le D(\mathsf P_+\Vert \mathsf P_-)
 \le16h^2Q_{\mathrm{cl}},
 \qquad
 Q_{\mathrm{cl}}\ge\frac{49}{8192\,\varepsilon^2}.
@@ -113,8 +113,8 @@ The empirical frequency vector achieves the classical order while remaining exac
 ```math
 \widehat p_{\mathrm{emp}}=\frac1n\sum_{t=1}^n e_{J_t},
 \qquad
-\mathbb E\|\widehat p_{\mathrm{emp}}-p\|_2^2
-=\frac{1-\|p\|_2^2}{n}\le\frac1n.
+\mathbb E\Vert \widehat p_{\mathrm{emp}}-p\Vert _2^2
+=\frac{1-\Vert p\Vert _2^2}{n}\le\frac1n.
 ```
 
 ## What is matched

@@ -57,8 +57,8 @@ The error is the total Euclidean mean squared error, equivalently the trace of t
 
 ```math
 \mathcal R_2(p)
-=\mathbb E_p\|\widehat p-p\|_2^2
-=\sum_{i=1}^{d}\operatorname{Var}_p(\widehat p_i).
+=\mathbb E_p\Vert \widehat p-p\Vert _2^2
+=\sum_{i=1}^{d}\mathrm{Var}_p(\widehat p_i).
 ```
 
 Exact normalization refers to the complete returned vector, rather than separately normalized coordinates in expectation. In particular, if $`p_i=0`$, positivity and unbiasedness require $`\widehat p_i=0`$ almost surely. The construction respects these faces without knowing which probabilities vanish.
@@ -78,8 +78,8 @@ The [conditional-reflection construction](conditional-reflection.md) supplies tw
 
 | Operation | Exact ideal guarantee | Expected original-source queries |
 | --- | --- | --- |
-| Prepare a conditional specimen | Return $`|\phi_S\rangle`$ after verified success | At most $`C_{\rm prep}/\sqrt{s_S}`$ |
-| Apply a conditional reflection | Apply $`V_S=I-2|\phi_S\rangle\langle\phi_S|`$, or its coherent controlled version, to arbitrary data and reference | At most $`C_{\rm ref}/s_S`$ |
+| Prepare a conditional specimen | Return $`\lvert\phi_S\rangle`$ after verified success | At most $`C_{\rm prep}/\sqrt{s_S}`$ |
+| Apply a conditional reflection | Apply $`V_S=I-2\lvert\phi_S\rangle\langle\phi_S\rvert`$, or its coherent controlled version, to arbitrary data and reference | At most $`C_{\rm ref}/s_S`$ |
 
 Here $`C_{\rm prep}`$ and $`C_{\rm ref}`$ are universal valid constants for the specified amplification schedules and their constant-query block encodings. They do not depend on $`p`$, the data input, the reference, $`d`$, $`T`$, or $`s_S`$. Known-predicate and native gate costs remain charged separately.
 
@@ -96,7 +96,7 @@ There is no claim of termination for the conditional routines at $`s_S=0`$. The 
 \qquad
 \mathbb E_p\widehat p=p,
 \qquad
-\mathbb E_p\|\widehat p-p\|_2^2
+\mathbb E_p\Vert \widehat p-p\Vert _2^2
 \le\frac{32(d-1)}{T^2},
 ```
 
@@ -109,7 +109,7 @@ and
 
 For $`d=1`$, return $`(1)`$ without a source query. The displayed constants concern the stated allocation and the two paid primitive bounds; they are not optimized circuit constants. Simplex boundedness also gives the elementary error ceiling $`\mathcal R_2(p)\le2`$.
 
-The construction also gives a certified finite-arithmetic clock-allocation rule with the same query bound and error constant64 in place of32. Its ideal quantum outputs remain exactly unbiased. This qualification avoids treating exact real-number floor comparisons as a free native operation; quantum gate synthesis and output rounding remain separate approximations.
+The construction also gives a certified finite-arithmetic clock-allocation rule with the same query bound and error constant 64 in place of 32. Its ideal quantum outputs remain exactly unbiased. This qualification avoids treating exact real-number floor comparisons as a free native operation; quantum gate synthesis and output rounding remain separate approximations.
 
 At fixed $`d`$, the result is quadratic error reduction in expected source work while preserving exact probabilistic validity and unbiasedness. The stated dimension dependence is not optimal distribution-estimation complexity: achieving root mean squared Euclidean error $`\varepsilon`$ through this bound costs $`O(d^{3/2}/\varepsilon)`$ expected source queries. Ordinary multidimensional quantum estimation already gives stronger dimension-dependent precision bounds under its own guarantees. The addition studied here is the conjunction of the exact simplex constraint and exact unbiasedness.
 

@@ -5,6 +5,7 @@ This repository studies exactly unbiased classical probability-vector estimates 
 ## Reading by purpose
 
 - Story and headline: README.md and science/README.md.
+- Study route: learning/README.md, the Childs (17 April 2025) bridge in learning/anchor-bridge.md, and the fixed project map M01–M30 in learning/milestones.md.
 - Exact source/access/output model and theorem: science/model.md.
 - Full algorithm and unbiasedness, zero-mass, minimum-weight, martingale-error and expected-query proofs: science/simplex-estimator.md.
 - Inherited scalar sine-clock circuit and moment proof: science/scalar-clock.md.

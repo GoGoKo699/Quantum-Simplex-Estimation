@@ -7,7 +7,7 @@ Given a reversible source circuit and its inverse, the algorithm returns a class
 ```math
 Z\in\Delta_d,\qquad
 \mathbb EZ=p,\qquad
-\mathbb E\|Z-p\|_2^2\le\frac{32(d-1)}{T^2},
+\mathbb E\Vert Z-p\Vert _2^2\le\frac{32(d-1)}{T^2},
 \qquad
 \mathbb EQ\le(C_{\rm prep}+C_{\rm ref})(d-1)T.
 ```
@@ -36,6 +36,10 @@ Start with the [scientific route](science/README.md) or the [model and exact the
 | Closest prior results and imported ingredients | [Related work](references/related-work.md) and [bibliography](references/references.bib) |
 
 The convex-range consequence preserves known affine constraints and positivity in each realization. Fresh unbiased random transition matrices preserve the mean evolution; for contracting mean dynamics their distribution-vector errors satisfy a stable variance bound. Reusing one random table under powers generally introduces bias. These results concern probability objects and their mean-square error, not a faster trajectory sampler or a demonstrated hardware advantage.
+
+## Learn the construction
+
+The [learning route](learning/README.md) starts from Andrew M. Childs's *Lecture Notes on Quantum Algorithms*, 17 April 2025. The [source-to-project bridge](learning/anchor-bridge.md) identifies the relevant foundations and supplies the missing links to this construction. The [30-milestone map](learning/milestones.md) follows the argument from reversible sources to the full estimator and its limits.
 
 ## Reproduce the finite checks
 
