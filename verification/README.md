@@ -30,14 +30,14 @@ The tree calculation integrates the two sibling kernels independently conditiona
 The 184 tree cases include exact zeros, deterministic outcomes, interior probabilities, highly uneven masses down to $`10^{-12}`$, and two different tree shapes. Half test the allocation used in the ideal scientific proof:
 
 ```math
-m(W)=0\quad(TW<3),\qquad
+m(W)=0\quad(TW\lt 3),\qquad
 m(W)=2^{\lfloor\log_2(TW+1)\rfloor}-1\quad(TW\ge3).
 ```
 
 Here $`m=0`$ means measuring one exact conditional specimen. The other half choose the conservative lower weight $`\overline W=\max\{0,W-1/(4T^2)\}`$. This is an admissible worst-error example for the certified finite-arithmetic allocation, rather than an implementation of interval cosine evaluation itself. The checks assert pathwise nonnegativity and normalization, the minimum positive global weight $`T^{-2}`$, vanishing calls to zero-mass subsets, exact-mean agreement within numerical tolerance, and the stated ideal bound
 
 ```math
-T^2\,\mathbb E\|Z-p\|_2^2\le32(d-1).
+T^2\,\mathbb E\Vert Z-p\Vert _2^2\le32(d-1).
 ```
 
 For the conservative lower-weight policy, the asserted bound is $`64(d-1)`$ instead.

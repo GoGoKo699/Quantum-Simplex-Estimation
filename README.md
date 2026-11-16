@@ -7,7 +7,7 @@ Given a reversible source circuit and its inverse, the algorithm returns a class
 ```math
 Z\in\Delta_d,\qquad
 \mathbb EZ=p,\qquad
-\mathbb E\|Z-p\|_2^2\le\frac{32(d-1)}{T^2},
+\mathbb E\Vert Z-p\Vert _2^2\le\frac{32(d-1)}{T^2},
 \qquad
 \mathbb EQ\le(C_{\rm prep}+C_{\rm ref})(d-1)T.
 ```

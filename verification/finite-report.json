@@ -4200,12 +4200,12 @@
   "script_sha256": "1be12a52ec5033fa15e209f238e34ea013014aca67f0c43c2efc41474e586426",
   "science_files_present_at_run": {
     "science/README.md": "3e4d446882c2606d00007dfbb1c2e72c3c5351c0890b11987ff86a262d43aad3",
-    "science/conditional-reflection.md": "ea4b953af4db4acf811bbe965176d480debad20fc85585a1a4ecaaf906b6dc31",
-    "science/convex-composition.md": "bc0f589ab8e70dfa745a6944148074e00f52d523a354bb47215c1e3e94f23092",
-    "science/lower-bounds.md": "0934190497984ce93963dd06c2e6b53ea9b38fa05add9d529f6578a4badd6f74",
-    "science/model.md": "3cbba1036e0c42a077c006f3de69950ef9aa5e3c4e0fba6b6dbb63bcedee4f06",
-    "science/precision-and-resources.md": "c4d6f8696cefb68030d18c985696946c30ae8cde1af11c157444b12544370007",
-    "science/scalar-clock.md": "0fb0e2b483b39909d1acc09098e2da62057a34d2e45b6672250033ef5d423695",
-    "science/simplex-estimator.md": "6b613c53601fdf7fad09ea202ac09b4370885a1eb773982f6dfd8699f8f0cf58"
+    "science/conditional-reflection.md": "4fe56a7e33639f88fb040f1c37fe55425eb195f238ec8a56a0665482f31131d6",
+    "science/convex-composition.md": "31167947f96afe66b47d0a3b459fc00c05740a775614cfb0cfc6c178b7ca57f7",
+    "science/lower-bounds.md": "eb8fce7e292e1bc689f240b04259aa40af16f903a8fdcbdc2a4e762d3645e44e",
+    "science/model.md": "7a4c015e107057a8902e15eba6feefa121b62739846c937dd27040fd8dfaea56",
+    "science/precision-and-resources.md": "b31321a6db2dafb04ece03ceabc7c6e4c57ac3f3116348835203dbec85ff4c4d",
+    "science/scalar-clock.md": "09abe923af1bd848321030ac371b5945446c6544b250ab643f368a78b772bb3b",
+    "science/simplex-estimator.md": "e7cf2080a3eaa84af2248532cb0ea40f9f8019992e43610a38081b971c52f18f"
   }
 }

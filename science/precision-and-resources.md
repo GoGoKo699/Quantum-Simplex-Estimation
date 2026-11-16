@@ -9,7 +9,7 @@ Let $`U|0\rangle=\sum_j\sqrt{p_j}|j\rangle|\mathrm{junk}_j\rangle`$ on $`n`$ sou
 The [tree estimator](simplex-estimator.md) uses a scale $`T\ge1`$ and has
 
 ```math
-\mathbb E\|Z-p\|_2^2\le V_d(T)
+\mathbb E\Vert Z-p\Vert _2^2\le V_d(T)
 :=\frac{32(d-1)}{T^2},
 \qquad
 \mathbb EZ=p,
@@ -71,14 +71,14 @@ The exact-budget policy in the tree proof uses real-valued comparisons. The foll
 \frac{3W}{4}\le\underline W\le W
 ```
 
-when $`W>0`$. Zero weights are recognized from the clock's exact endpoint label or a zero Bernoulli child; no numerical zero test is needed. If $`T\underline W<3`$, use the one-specimen conditional draw. Otherwise choose the largest dyadic clock $`m=2^\ell-1\le T\underline W`$. This choice depends only on earlier classical outcomes and so preserves exact conditional unbiasedness in the ideal quantum model.
+when $`W>0`$. Zero weights are recognized from the clock's exact endpoint label or a zero Bernoulli child; no numerical zero test is needed. If $`T\underline W\lt 3`$, use the one-specimen conditional draw. Otherwise choose the largest dyadic clock $`m=2^\ell-1\le T\underline W`$. This choice depends only on earlier classical outcomes and so preserves exact conditional unbiasedness in the ideal quantum model.
 
 The cost argument is unchanged because $`m\le TW`$. The smallest-positive-weight invariant also remains valid: in a clock branch $`m+1\le TW+1\le4TW/3`$, so its smallest positive child is at least $`27/(16T^2W)\ge T^{-2}`$; in a Bernoulli branch a positive child retains $`W`$. The root has weight one.
 
-The variance constant increases. In a one-specimen branch, $`TW<4`$ and
+The variance constant increases. In a one-specimen branch, $`TW\lt 4`$ and
 
 ```math
-W^2\mathrm{Var}(Y\mid W)\le W^2/4<4/T^2.
+W^2\mathrm{Var}(Y\mid W)\le W^2/4\lt 4/T^2.
 ```
 
 In a clock branch, $`L=m+1>(T\underline W+1)/2\ge3TW/8`$. Using the scalar bound $`\kappa_m\le16/L^2`$ and $`r(1-r)\le1/4`$ gives
@@ -94,7 +94,7 @@ The same martingale calculation as in the tree proof therefore yields
 \mathbb EZ=p,
 \qquad Z\in\Delta_d,
 \qquad
-\mathbb E\|Z-p\|_2^2
+\mathbb E\Vert Z-p\Vert _2^2
 \le V_d^{\mathrm{finite\ allocator}}(T)
 :=\frac{64(d-1)}{T^2}.
 ```
@@ -103,7 +103,7 @@ Every positive $`W`$ is at least $`T^{-2}`$. Compute a dyadic $`\widehat W`$ wit
 
 ## A capped, perturbed implementation theorem
 
-Consider either exact ideal allocator above, with expected elementary work at most $`B=B_d(T)`$. Write $`V(T)`$ for its proved mean-square bound: $`32(d-1)/T^2`$ for the original exact-budget policy, or $`64(d-1)/T^2`$ for the certified finite-arithmetic allocator. Count the events to be capped so that every unitary application, binary measurement and classical control action is included. Let $`0<\delta<1`$, and set
+Consider either exact ideal allocator above, with expected elementary work at most $`B=B_d(T)`$. Write $`V(T)`$ for its proved mean-square bound: $`32(d-1)/T^2`$ for the original exact-budget policy, or $`64(d-1)/T^2`$ for the certified finite-arithmetic allocator. Count the events to be capped so that every unitary application, binary measurement and classical control action is included. Let $`0\lt \delta\lt 1`$, and set
 
 ```math
 K=\left\lceil\frac B\delta\right\rceil.
@@ -118,14 +118,14 @@ Finally, round the recorded local binary split values within $`[0,1]`$ and form 
 ```math
 \widetilde Z\in\Delta_d,
 \qquad
-\|\mathbb E\widetilde Z-p\|_2
+\Vert \mathbb E\widetilde Z-p\Vert _2
 \le\sqrt2\,(\delta+K\eta)+\rho,
 ```
 
 and
 
 ```math
-\sqrt{\mathbb E\|\widetilde Z-p\|_2^2}
+\sqrt{\mathbb E\Vert \widetilde Z-p\Vert _2^2}
 \le
 \sqrt{V(T)+2(\delta+K\eta)}+\rho.
 ```
@@ -164,13 +164,13 @@ For a gate-synthesis scheme with cost logarithmic in inverse error, the requeste
 
 ## Rounding while preserving the simplex
 
-At each internal node round its split $`y_v`$ down to a $`b`$-bit binary value $`\bar y_v\in[0,1]`$, with $`|\bar y_v-y_v|<2^{-b}`$. Form child weights as $`W\bar y_v`$ and $`W(1-\bar y_v)`$ using exact rational arithmetic. Every leaf weight is nonnegative and the sum remains exactly one. Successive replacement of the node splits gives
+At each internal node round its split $`y_v`$ down to a $`b`$-bit binary value $`\bar y_v\in[0,1]`$, with $`|\bar y_v-y_v|\lt 2^{-b}`$. Form child weights as $`W\bar y_v`$ and $`W(1-\bar y_v)`$ using exact rational arithmetic. Every leaf weight is nonnegative and the sum remains exactly one. Successive replacement of the node splits gives
 
 ```math
-\|\bar Z-Z\|_2
-\le\|\bar Z-Z\|_1
+\Vert \bar Z-Z\Vert _2
+\le\Vert \bar Z-Z\Vert _1
 \le2\sum_{v\ \mathrm{internal}}|\bar y_v-y_v|
-<2(d-1)2^{-b}.
+\lt 2(d-1)2^{-b}.
 ```
 
 Thus $`b\ge\lceil\log_2(2(d-1)/\rho)\rceil`$ suffices. Store the split values or their exact dyadic products; independently rounding the final leaf coordinates need not preserve normalization. The rounding described here is deterministic and generally biased.

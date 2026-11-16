@@ -16,7 +16,7 @@ The flat four-term linear combination can use branches with top blocks $`sI,-vv^
 
 ## Repeat-until-success algebra
 
-For a unitary with top block $`aV`$ and $`V`$ unitary, every halting path in the alternating forward/inverse flag-measurement protocol is a scalar multiple of $`V`$ or of the identity. Consequently, reference entanglement survives conditional on the complete classical transcript. With $`p=|a|^2`$, the mean execution count is $`2`$ for $`p<1`$ and $`1`$ at $`p=1`$; the desired-output probability is $`2p/(1+p)`$. At $`p=0`$ the trial resets after two executions and never declares the desired output. The enclosing unknown-amplitude search therefore needs the positive-mass promise for eventual termination.
+For a unitary with top block $`aV`$ and $`V`$ unitary, every halting path in the alternating forward/inverse flag-measurement protocol is a scalar multiple of $`V`$ or of the identity. Consequently, reference entanglement survives conditional on the complete classical transcript. With $`p=|a|^2`$, the mean execution count is $`2`$ for $`p\lt 1`$ and $`1`$ at $`p=1`$; the desired-output probability is $`2p/(1+p)`$. At $`p=0`$ the trial resets after two executions and never declares the desired output. The enclosing unknown-amplitude search therefore needs the positive-mass promise for eventual termination.
 
 ## A uniform minimum-weight bound
 
@@ -48,7 +48,7 @@ For completeness, convexity of $`\tan`$ on $`[0,\pi/4]`$ bounds $`\tan\alpha\le4
 
 Exact nonnegativity and $`\mathbb EW=s`$ imply that a zero-mass node has $`W=0`$ almost surely. It is skipped. Arbitrary conventions for its undefined conditional distribution cannot affect the output. Likewise, a split with conditional probability zero or one is deterministic. Conditional descendant distributions on a zero-mass child can be assigned arbitrarily for a proof notation, because the corresponding random weight is identically zero.
 
-In a preorder exposure of the splits, a node contributes the centered increment $`W(Y-r)(q_L-q_R)`$. The normalized descendant vectors have disjoint supports, so $`\|q_L-q_R\|_2^2\le2`$. Conditional centering makes distinct increments orthogonal in mean; summing their second moments is valid for any fixed finite binary tree.
+In a preorder exposure of the splits, a node contributes the centered increment $`W(Y-r)(q_L-q_R)`$. The normalized descendant vectors have disjoint supports, so $`\Vert q_L-q_R\Vert _2^2\le2`$. Conditional centering makes distinct increments orthogonal in mean; summing their second moments is valid for any fixed finite binary tree.
 
 ## Numerical checks must preserve analytic endpoints
 

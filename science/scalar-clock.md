@@ -70,7 +70,7 @@ At $`q=0`$ only $`j=1`$ occurs and $`Y=0`$; at $`q=1`$ only $`j=m`$ occurs and $
 
 ## Exact variance
 
-Since the mean is $`q`$, the variance on a phase vector is $`\|(B-qI)v(\varphi)\|^2`$. Direct substitution gives
+Since the mean is $`q`$, the variance on a phase vector is $`\Vert (B-qI)v(\varphi)\Vert ^2`$. Direct substitution gives
 
 ```math
 [(B-qI)v(\varphi)]_r

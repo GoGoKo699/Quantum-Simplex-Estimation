@@ -57,7 +57,7 @@ The error is the total Euclidean mean squared error, equivalently the trace of t
 
 ```math
 \mathcal R_2(p)
-=\mathbb E_p\|\widehat p-p\|_2^2
+=\mathbb E_p\Vert \widehat p-p\Vert _2^2
 =\sum_{i=1}^{d}\mathrm{Var}_p(\widehat p_i).
 ```
 
@@ -96,7 +96,7 @@ There is no claim of termination for the conditional routines at $`s_S=0`$. The 
 \qquad
 \mathbb E_p\widehat p=p,
 \qquad
-\mathbb E_p\|\widehat p-p\|_2^2
+\mathbb E_p\Vert \widehat p-p\Vert _2^2
 \le\frac{32(d-1)}{T^2},
 ```
 
