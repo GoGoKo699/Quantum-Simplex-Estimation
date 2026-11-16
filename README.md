@@ -37,6 +37,10 @@ Start with the [scientific route](science/README.md) or the [model and exact the
 
 The convex-range consequence preserves known affine constraints and positivity in each realization. Fresh unbiased random transition matrices preserve the mean evolution; for contracting mean dynamics their distribution-vector errors satisfy a stable variance bound. Reusing one random table under powers generally introduces bias. These results concern probability objects and their mean-square error, not a faster trajectory sampler or a demonstrated hardware advantage.
 
+## Learn the construction
+
+The [learning route](learning/README.md) starts from Andrew M. Childs's *Lecture Notes on Quantum Algorithms*, 17 April 2025. The [source-to-project bridge](learning/anchor-bridge.md) identifies the relevant foundations and supplies the missing links to this construction. The [30-milestone map](learning/milestones.md) follows the argument from reversible sources to the full estimator and its limits.
+
 ## Reproduce the finite checks
 
 ```bash

@@ -17,7 +17,7 @@ The two operations are:
 
 | Operation | Exact output in the ideal model | Expected source calls |
 | --- | --- | --- |
-| `PrepareConditional` | One specimen in $`|\phi\rangle`$ | $`C_{\mathrm{prep}}/\sqrt{s}`$ |
+| `PrepareConditional` | One specimen in $`\lvert\phi\rangle`$ | $`C_{\mathrm{prep}}/\sqrt{s}`$ |
 | `ReflectConditional` | $`R_\phi`$ on arbitrary data, or its controlled version | $`C_{\mathrm{ref}}/s`$ |
 
 Both halt almost surely without knowing $`s`$. Source calls count applications of $`U`$ and $`U^\dagger`$ equally. The constants are universal and need not be optimized; the explicit reflection schedule below permits $`C_{\mathrm{ref}}=512`$ for the stated four-query block encoder. Known predicates, zero tests, ancillary registers and classical loops have additional costs stated below.

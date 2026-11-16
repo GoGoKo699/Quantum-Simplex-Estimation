@@ -78,8 +78,8 @@ The [conditional-reflection construction](conditional-reflection.md) supplies tw
 
 | Operation | Exact ideal guarantee | Expected original-source queries |
 | --- | --- | --- |
-| Prepare a conditional specimen | Return $`|\phi_S\rangle`$ after verified success | At most $`C_{\rm prep}/\sqrt{s_S}`$ |
-| Apply a conditional reflection | Apply $`V_S=I-2|\phi_S\rangle\langle\phi_S|`$, or its coherent controlled version, to arbitrary data and reference | At most $`C_{\rm ref}/s_S`$ |
+| Prepare a conditional specimen | Return $`\lvert\phi_S\rangle`$ after verified success | At most $`C_{\rm prep}/\sqrt{s_S}`$ |
+| Apply a conditional reflection | Apply $`V_S=I-2\lvert\phi_S\rangle\langle\phi_S\rvert`$, or its coherent controlled version, to arbitrary data and reference | At most $`C_{\rm ref}/s_S`$ |
 
 Here $`C_{\rm prep}`$ and $`C_{\rm ref}`$ are universal valid constants for the specified amplification schedules and their constant-query block encodings. They do not depend on $`p`$, the data input, the reference, $`d`$, $`T`$, or $`s_S`$. Known-predicate and native gate costs remain charged separately.
 
